@@ -68,19 +68,13 @@ button.hamburger {
     transition: all 500ms ease-out;
   }
   .nav-list li {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 15px;
   }
   .nav-list.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-  }
-  .line {
-    width: 32px;
-    height: 2px;
-    background-color: #000c14;
-    margin: 8px;
   }
   nav {
     position: relative;
@@ -104,6 +98,81 @@ button.hamburger {
   }
 }
 
+/* 
+We start creating for mobile then add
+media queries for large screens afterwards
+ */
+/*  Hero section
+ */
+.container {
+  width: 100%;
+  height: 80vh;
+  background-color: #fbf7ef;
+  padding: 30px;
+}
+
+.hero-intro h3 {
+  color: #000c14;
+  font-family: "Poppins", san-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.hero-intro h3::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #fb2335;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.hero-lg-intro h2 {
+  font-family: "Poppins", san-serif;
+  padding: 5px;
+  color: #fb2335;
+  font-size: 1.9rem;
+  line-height: 35px;
+  width: 240px;
+}
+
+.hero-lg-intro h2::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fb2335;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.hero-lg-intro h2 span {
+  color: #b3aa94;
+}
+
+.hero-text p {
+  color: rgba(0, 12, 20, 0.8);
+  font-family: "Poppins", san-serif;
+  font-size: .8rem;
+  padding: 10px 5px;
+  line-height: 18px;
+}
+
+.hero-btn {
+  background-color: #fb2335;
+  width: 160px;
+  height: 50px;
+  border: 2px solid #fb2335;
+  color: #fbf7ef;
+  text-transform: capitalize;
+  font-family: "Poppins", san-serif;
+  padding: 10px 5px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+/* About Section
+ */
 * {
   padding: 0;
   margin: 0;
