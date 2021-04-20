@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fbf7ef;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+  width: 100%;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  width: 50%;
+}
+
+.nav-list li {
+  font-size: 1.1rem;
+  font-family: "Poppins", san-serif;
+  margin: 20px;
+  padding: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fb2335;
+}
+
+nav .logo a {
+  color: #fb2335;
+  font-size: 1.8rem;
+  font-family: "Poppins", san-serif;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    position: fixed;
+    background-color: #fbf7ef;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .nav-list li {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 15px;
+  }
+  .nav-list.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+  .line {
+    width: 32px;
+    height: 2px;
+    background-color: #000c14;
+    margin: 8px;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    cursor: pointer;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+  }
+  nav .logo a {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    font-size: 2rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
