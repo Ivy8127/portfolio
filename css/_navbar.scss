@@ -17,7 +17,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  width: 50%;
+  width: 70%;
   
   li {
     font-size: 1.1rem;
@@ -37,6 +37,9 @@ nav .logo a{
   font-family: $font-family;
   margin-left: 20px;
 }
+button.hamburger{
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .nav-list{
     position: fixed;
@@ -47,7 +50,7 @@ nav .logo a{
     top: 0; 
     clip-path: circle(50px at 90% -10%);
     -webkit-clip-path:circle(50px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 500ms ease-out;
     li{
       font-size: 1.8rem;
       margin: 0;
@@ -68,7 +71,8 @@ nav .logo a{
   nav{
       position: relative;
   }
-  .hamburger{
+  button.hamburger{
+      display: block;
       position: absolute;
       top: 50%;
       right: 5%;
