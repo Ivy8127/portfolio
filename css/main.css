@@ -98,10 +98,106 @@ button.hamburger {
   }
 }
 
-/* About Section 
+.about-me {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+}
 
-//remember to create a partial for this plus the hero text section first thing tomorrow
- */
+.about-me h2 {
+  color: #fbf7ef;
+  font-family: "Poppins", san-serif;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.about-me h2::after {
+  content: "";
+  background-color: #fb2335;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  outline: none;
+  border: none;
+  width: 50px;
+  color: #fbf7ef;
+  background-color: #000000;
+  font-family: "Poppins", san-serif;
+  margin-left: 5px;
+  padding: 5px 5px 2px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.tab button.active {
+  border-bottom: 1px solid #fb2335;
+}
+
+.tabcontent {
+  color: #fbf7ef;
+  font-family: "Poppins", san-serif;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+
+.tabcontent p {
+  font-size: .9rem;
+  line-height: 25px;
+}
+
+.tabcontent h3 {
+  padding-bottom: 20px;
+}
+
+.tabcontent .box {
+  width: 200px;
+  height: 210px;
+  border: 1.5px solid #fb2335;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.tabcontent img {
+  margin-left: 20px;
+  width: 100%;
+  height: 210px;
+  position: relative;
+  top: -20px;
+  left: -8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -126,12 +222,12 @@ media queries for large screens afterwards
 .container {
   width: 100%;
   height: 80vh;
-  background-color: #FBF7EF;
+  background-color: #fbf7ef;
   padding: 30px;
 }
 
 .hero-intro h3 {
-  color: #000c14;
+  color: #000000;
   font-family: "Poppins", san-serif;
   font-size: 1.2rem;
   padding: 5px;
@@ -141,7 +237,7 @@ media queries for large screens afterwards
   content: "";
   width: 3px;
   height: 3px;
-  background-color: #FB2335;
+  background-color: #fb2335;
   display: inline-block;
   border-radius: 50%;
 }
@@ -149,7 +245,7 @@ media queries for large screens afterwards
 .hero-lg-intro h2 {
   font-family: "Poppins", san-serif;
   padding: 5px;
-  color: #FB2335;
+  color: #fb2335;
   font-size: 1.9rem;
   line-height: 35px;
   width: 240px;
@@ -159,13 +255,13 @@ media queries for large screens afterwards
   content: "";
   width: 5px;
   height: 5px;
-  background-color: #FB2335;
+  background-color: #fb2335;
   display: inline-block;
   border-radius: 50%;
 }
 
 .hero-lg-intro h2 span {
-  color: #B3AA94;
+  color: #b3aa94;
 }
 
 .hero-text p {
@@ -178,11 +274,11 @@ media queries for large screens afterwards
 }
 
 .hero-btn {
-  background-color: #FB2335;
+  background-color: #fb2335;
   width: 140px;
   height: 40px;
-  border: 2px solid #FB2335;
-  color: #FBF7EF;
+  border: 2px solid #fb2335;
+  color: #fbf7ef;
   text-transform: capitalize;
   font-family: "Poppins", san-serif;
   padding: 10px 5px;

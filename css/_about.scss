@@ -1,0 +1,80 @@
+$floral-white: #fbf7ef;
+$red: #fb2335;
+$grey: #b3aa94;
+$black: #000000;
+$font-family: "Poppins", san-serif;
+
+.about-me{
+    background-color: $black;
+    width: 100%;
+    padding: 20px;
+    //add a height to me
+    h2{
+        color: $floral-white;
+        font-family: $font-family;
+        font-size: 1.5rem;
+        padding: 10px;
+        &::after{
+            content: "";
+            background-color: $red;
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+    }
+}
+.tab{
+    overflow: hidden;
+}
+.tab button{
+    outline: none;
+    border: none;
+    width: 50px;
+    color: $floral-white;
+    background-color: $black;
+    font-family: $font-family;
+    margin-left: 5px;
+    padding: 5px 5px 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.tab button.active{
+    border-bottom: 1px solid $red;
+}
+.tabcontent{
+    color: $floral-white;
+    font-family: $font-family;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: none;
+    animation: fadeEffect 1s;
+    p{
+        font-size: .9rem;
+       line-height: 25px;
+    }
+    h3{
+        padding-bottom: 20px;
+    }
+    .box{
+        width: 200px;
+        height: 210px;
+        border: 1.5px solid $red;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    img{
+        margin-left: 20px;
+        width: 100%;
+        height:210px;
+        position: relative;
+        top: -20px;
+        left: -8px;
+        object-fit:cover;
+    }
+    
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

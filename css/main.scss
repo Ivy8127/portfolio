@@ -1,18 +1,20 @@
 @import 'navbar';
+@import 'about';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-$floral-white : #FBF7EF;
-$red : #FB2335;
-$grey : #B3AA94;
-$black : #000c14;
-$font-family : "Poppins",san-serif;
+
 
 *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
     $font-family : "Poppins";
+    $floral-white : #FBF7EF;
+    $red : #FB2335;
+    $grey : #B3AA94;
+    $black : #000c14;
+    $font-family : "Poppins",san-serif;
 }
 li{
     list-style-type: none;
