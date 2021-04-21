@@ -20,3 +20,273 @@ li{
 a{
     text-decoration: none;
 }
+/* 
+We start creating for mobile then add
+media queries for large screens afterwards
+ */
+
+/*  Hero section
+ */
+ .container {
+    width: 100%;
+    height: 80vh;
+    background-color: $floral-white;
+    padding: 30px;
+  }
+  
+  .hero-intro h3 {
+    color: $black;
+    font-family: $font-family;
+    font-size: 1.2rem;
+    padding: 5px;
+    &::after {
+      content: "";
+      width: 3px;
+      height: 3px;
+      background-color: $red;
+      display: inline-block;
+      border-radius: 50%;
+    }
+  }
+  .hero-lg-intro h2 {
+    font-family: $font-family;
+    padding: 5px;
+    color: $red;
+    font-size: 1.9rem;
+    line-height: 35px;
+    width: 240px;
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: $red;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    span {
+      color: $grey;
+    }
+  }
+  .hero-text p {
+    color: rgba(0, 12, 20, 0.8);
+    font-family: $font-family;
+    font-size: 0.8rem;
+    padding: 10px 5px;
+    line-height: 18px;
+    width: 90%;
+    
+  }
+  .hero-btn {
+    background-color: $red;
+    width: 140px;
+    height: 40px;
+    border: 2px solid $red;
+    color: $floral-white;
+    text-transform: capitalize;
+    font-family: $font-family;
+    padding: 10px 5px;
+    font-size: .8rem;
+    text-align: center;
+    margin: 10px 5px;
+  }
+
+/*   Hero-section media queries for large screens */
+@media screen and(min-width:400px){
+    .hero-text p {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 425px){
+    .container {
+        height: 100vh;
+      }
+      .hero-intro h3 {
+        font-size: 1.8rem;
+        padding: 10px;
+        &::after {
+          content: "";
+          width: 5px;
+          height: 5px;
+          
+        }
+      }
+      .hero-lg-intro h2 {
+        padding: 10px;
+        font-size: 2.9rem;
+        line-height: 48px;
+        width: 350px;
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .hero-text p {
+        font-size: 1rem;
+        padding: 15px 10px;
+        line-height: 25px;
+        width: 380px;
+      }
+      .hero-btn {
+        width: 180px;
+        height: 50px;
+        padding: 10px 5px;
+        font-size: 1rem;
+        margin: 15px 5px;
+      }
+}
+@media screen and (min-width: 576px){
+    .container {
+        height: 100vh;
+      }
+      .hero-intro h3 {
+        font-size: 2rem;
+      }
+      .hero-lg-intro h2 {
+        font-size: 3.2rem;
+        line-height: 50px;
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+        }
+      }
+      .hero-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 1.1rem;
+      }
+}
+@media screen and (min-width: 768px){
+    .container {
+        height: 100vh;
+      }
+      .hero-intro h3 {
+        font-size: 2rem;
+        padding: 15px;
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+          
+        }
+      }
+      .hero-lg-intro h2 {
+        padding: 15px;
+        font-size: 3.5rem;
+        line-height: 55px;
+        width: 450px;
+        &::after {
+          content: "";
+          width: 10px;
+          height: 10px;
+        }
+      }
+      .hero-text p {
+        font-size: 1rem;
+        padding: 20px 15px;
+        line-height: 20px;
+        width: 450px;
+      }
+      .hero-btn {
+        width: 200px;
+        height: 50px;
+        padding: 10px 5px;
+        font-size: 1.1rem;
+        margin: 20px 15px;
+      }
+}
+@media screen and (min-width: 992px){
+    .container {
+        height: 100vh;
+        //padding: 5px;
+      }
+      .hero-intro {
+          padding: 20px 30px 0px;
+          h3 {
+        font-size: 2.2rem;
+       }
+        
+        &::after {
+          content: "";
+          width: 7px;
+          height: 7px;
+          
+        }
+      }
+      .hero-lg-intro h2 {
+        padding: 0px 30px;
+        font-size: 4.2rem;
+        line-height: 70px;
+        width: 500px;
+        margin: 20px;
+        &::after {
+          content: "";
+          width: 11px;
+          height: 11px;
+        }
+      }
+      
+      .hero-text{
+          margin-left: 10px;
+          padding: 0px 30px;
+        p {
+            font-size: .9rem;
+            line-height: 22px;
+            width: 400px;
+          }
+      }
+      .hero-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 1.1rem;
+        margin-left: 50px;;
+      }
+}
+@media screen and (min-width: 1920px){
+    .container {
+        height: 100vh;
+        //padding: 5px;
+      }
+      .hero-intro {
+          padding: 20px 30px 0px;
+          h3 {
+        font-size: 4rem;
+       }
+        
+        &::after {
+          content: "";
+          width:20px;
+          height: 20px;
+          
+        }
+      }
+      .hero-lg-intro h2 {
+        padding: 0px 30px;
+        font-size: 6.5rem;
+        line-height: 100px;
+        width: 800px;
+        margin: 20px;
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+        }
+      }
+      
+      .hero-text{
+          margin-left: 10px;
+          padding: 0px 30px;
+        p {
+            font-size: 1.8rem;
+            line-height: 35px;
+            width: 700px;
+          }
+      }
+      .hero-btn {
+        width: 280px;
+        height: 80px;
+        font-size: 2rem;
+        margin-left: 50px;;
+      }
+}
