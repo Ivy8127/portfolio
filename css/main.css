@@ -99,6 +99,7 @@ button.hamburger {
 }
 
 .about-me {
+  display: none;
   background-color: #000000;
   width: 100%;
   padding: 20px;
@@ -118,6 +119,10 @@ button.hamburger {
   height: 5px;
   display: inline-block;
   border-radius: 50%;
+}
+
+.about-me hr {
+  display: none;
 }
 
 .tab {
@@ -153,7 +158,7 @@ button.hamburger {
 }
 
 .tabcontent p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 25px;
 }
 
@@ -162,8 +167,8 @@ button.hamburger {
 }
 
 .tabcontent .box {
-  width: 200px;
-  height: 210px;
+  width: 150px;
+  height: 160px;
   border: 1.5px solid #fb2335;
   margin-top: 50px;
   margin-left: 30px;
@@ -172,7 +177,7 @@ button.hamburger {
 .tabcontent img {
   margin-left: 20px;
   width: 100%;
-  height: 210px;
+  height: 160px;
   position: relative;
   top: -20px;
   left: -8px;
@@ -195,6 +200,182 @@ button.hamburger {
   }
   to {
     opacity: 1;
+  }
+}
+
+/*   Media queries for larger screens  */
+@media screen and (min-width: 576px) {
+  .about-me h2 {
+    font-size: 1.8rem;
+  }
+  .about-me h2::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+  }
+  .tab button {
+    width: 60px;
+    font-size: 1rem;
+  }
+  .tabcontent {
+    width: 400px;
+  }
+  .tabcontent .box {
+    width: 180px;
+    height: 170px;
+  }
+  .tabcontent img {
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me h2 {
+    font-size: 2.1rem;
+  }
+  .about-me h2::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+  }
+  .tab button {
+    width: 70px;
+    font-size: 1.2rem;
+  }
+  .tabcontent {
+    width: 600px;
+  }
+  .tabcontent p {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  .tabcontent h3 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .tabcontent .box {
+    width: 250px;
+    height: 250px;
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+  .tabcontent img {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-me {
+    padding: 30px;
+  }
+  .about-me h2 {
+    font-size: 3rem;
+    margin-left: 40px;
+    padding: 10px 10px 0px;
+  }
+  .about-me::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+  }
+  .about-me hr {
+    position: relative;
+    width: 45%;
+    left: 41%;
+    top: -28px;
+    height: 1px;
+    border: none;
+    background-color: #fbf7ef;
+    display: block;
+  }
+  .vertical-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tab {
+    width: 30%;
+    position: relative;
+    bottom: 100px;
+    border-right: 0.3px solid #fbf7ef;
+    margin-right: 20px;
+  }
+  .tab button {
+    display: block;
+    width: 20%;
+    position: relative;
+    left: 50%;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .tab button.active {
+    border-left: 1px solid #fb2335;
+    border-bottom: none;
+  }
+  .tabcontent {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 54px;
+  }
+  .tabcontent h3 {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tabcontent .box {
+    left: -80%;
+    top: -28%;
+    position: relative;
+    width: 190px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me h2 {
+    font-size: 4rem;
+  }
+  .about-me h2::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  .tab {
+    top: -50px;
+  }
+  .tab button {
+    width: 150px;
+    font-size: 2rem;
+  }
+  .tabcontent {
+    width: 600px;
+    padding-left: 30px;
+  }
+  .tabcontent h3 {
+    font-size: 3rem;
+  }
+  .tabcontent p {
+    font-size: 1.6rem;
+    line-height: 35px;
+  }
+  .tabcontent .box {
+    left: -150%;
+    top: -60%;
+    position: relative;
+    width: 400px;
+    height: 410px;
+  }
+  .tabcontent img {
+    height: 400px;
   }
 }
 
@@ -224,13 +405,28 @@ media queries for large screens afterwards
   height: 80vh;
   background-color: #fbf7ef;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero-intro h3 {
   color: #000000;
   font-family: "Poppins", san-serif;
   font-size: 1.2rem;
+  margin-left: -50%;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .hero-intro h3::after {
@@ -249,6 +445,8 @@ media queries for large screens afterwards
   font-size: 1.9rem;
   line-height: 35px;
   width: 240px;
+  margin-left: 8%;
+  margin-bottom: 10px;
 }
 
 .hero-lg-intro h2::after {
@@ -264,13 +462,17 @@ media queries for large screens afterwards
   color: #b3aa94;
 }
 
+.hero-text {
+  width: 250px;
+  margin-bottom: 18px;
+  margin-left: 53px;
+}
+
 .hero-text p {
   color: rgba(0, 12, 20, 0.8);
   font-family: "Poppins", san-serif;
   font-size: 0.8rem;
-  padding: 10px 5px;
   line-height: 18px;
-  width: 90%;
 }
 
 .hero-btn {
@@ -284,13 +486,13 @@ media queries for large screens afterwards
   padding: 10px 5px;
   font-size: .8rem;
   text-align: center;
-  margin: 10px 5px;
+  margin-left: -60px;
 }
 
 /*   Hero-section media queries for large screens */
 @media screen and (min-width: 400px) {
   .hero-text p {
-    width: 70%;
+    width: 250px;
   }
 }
 
@@ -301,6 +503,7 @@ media queries for large screens afterwards
   .hero-intro h3 {
     font-size: 1.8rem;
     padding: 10px;
+    margin-left: -134px;
   }
   .hero-intro h3::after {
     content: "";
@@ -322,14 +525,15 @@ media queries for large screens afterwards
     font-size: 1rem;
     padding: 15px 10px;
     line-height: 25px;
-    width: 380px;
+    width: 300px;
+    margin-left: -48px;
   }
   .hero-btn {
     width: 180px;
     height: 50px;
     padding: 10px 5px;
     font-size: 1rem;
-    margin: 15px 5px;
+    margin-left: -95px;
   }
 }
 
@@ -339,20 +543,26 @@ media queries for large screens afterwards
   }
   .hero-intro h3 {
     font-size: 2rem;
+    margin-left: -240px;
   }
   .hero-lg-intro h2 {
     font-size: 3.2rem;
     line-height: 50px;
+    margin-left: -125px;
   }
   .hero-lg-intro h2::after {
     content: "";
     width: 8px;
     height: 8px;
   }
+  .hero-text p {
+    margin-left: -138px;
+  }
   .hero-btn {
     width: 200px;
     height: 50px;
     font-size: 1.1rem;
+    margin-left: -250px;
   }
 }
 
@@ -362,7 +572,8 @@ media queries for large screens afterwards
   }
   .hero-intro h3 {
     font-size: 2rem;
-    padding: 15px;
+    margin-left: -270px;
+    margin-top: 30px;
   }
   .hero-intro h3::after {
     content: "";
@@ -370,10 +581,12 @@ media queries for large screens afterwards
     height: 6px;
   }
   .hero-lg-intro h2 {
-    padding: 15px;
+    padding: 15px 15px 0px;
     font-size: 3.5rem;
-    line-height: 55px;
+    line-height: 58px;
     width: 450px;
+    margin-left: -98px;
+    margin-bottom: 10px;
   }
   .hero-lg-intro h2::after {
     content: "";
@@ -383,27 +596,72 @@ media queries for large screens afterwards
   .hero-text p {
     font-size: 1rem;
     padding: 20px 15px;
-    line-height: 20px;
-    width: 450px;
+    line-height: 25px;
+    width: 360px;
+    margin-left: -170px;
   }
   .hero-btn {
     width: 200px;
     height: 50px;
     padding: 10px 5px;
     font-size: 1.1rem;
-    margin: 20px 15px;
+    margin-left: -310px;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   .container {
     height: 100vh;
   }
-  .hero-intro {
-    padding: 20px 30px 0px;
+  .hero-intro h3 {
+    font-size: 2rem;
+    margin-left: -350px;
+    margin-top: -80px;
+    margin-bottom: 0px;
+  }
+  .hero-intro::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+  }
+  .hero-lg-intro h2 {
+    padding: 0px 30px;
+    font-size: 4rem;
+    line-height: 70px;
+    width: 500px;
+    margin-left: -240px;
+    margin-bottom: 0px;
+  }
+  .hero-lg-intro h2::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+  }
+  .hero-text {
+    margin-left: -170px;
+    padding: 0px 30px;
+  }
+  .hero-text p {
+    font-size: .9rem;
+    line-height: 22px;
+  }
+  .hero-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    margin-left: -470px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 100vh;
   }
   .hero-intro h3 {
     font-size: 2.2rem;
+    margin-left: -500px;
+    margin-top: -120px;
+    margin-bottom: 0px;
   }
   .hero-intro::after {
     content: "";
@@ -413,17 +671,18 @@ media queries for large screens afterwards
   .hero-lg-intro h2 {
     padding: 0px 30px;
     font-size: 4.2rem;
-    line-height: 70px;
+    line-height: 75px;
     width: 500px;
-    margin: 20px;
+    margin-left: -520px;
+    margin-bottom: 0px;
   }
   .hero-lg-intro h2::after {
     content: "";
-    width: 11px;
-    height: 11px;
+    width: 13px;
+    height: 13px;
   }
   .hero-text {
-    margin-left: 10px;
+    margin-left: -480px;
     padding: 0px 30px;
   }
   .hero-text p {
@@ -435,51 +694,49 @@ media queries for large screens afterwards
     width: 200px;
     height: 50px;
     font-size: 1.1rem;
-    margin-left: 50px;
+    margin-left: -780px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .container {
     height: 100vh;
   }
-  .hero-intro {
-    padding: 20px 30px 0px;
-  }
   .hero-intro h3 {
-    font-size: 4rem;
+    font-size: 2.3rem;
+    margin-top: -100px;
   }
-  .hero-intro::after {
+  .hero-intro h3::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
   }
   .hero-lg-intro h2 {
-    padding: 0px 30px;
-    font-size: 6.5rem;
+    font-size: 5rem;
     line-height: 100px;
-    width: 800px;
-    margin: 20px;
+    width: 600px;
+    margin-left: -440px;
+    padding-bottom: 20px;
   }
   .hero-lg-intro h2::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   .hero-text {
-    margin-left: 10px;
+    margin-left: -470px;
     padding: 0px 30px;
   }
   .hero-text p {
-    font-size: 1.8rem;
-    line-height: 35px;
-    width: 700px;
+    font-size: 1.1rem;
+    line-height: 25px;
+    width: 500px;
   }
   .hero-btn {
-    width: 280px;
-    height: 80px;
-    font-size: 2rem;
-    margin-left: 50px;
+    width: 240px;
+    height: 60px;
+    font-size: 1.3rem;
+    margin-left: -735px;
   }
 }
 /*# sourceMappingURL=main.css.map */
