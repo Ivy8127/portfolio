@@ -34,13 +34,18 @@ media queries for large screens afterwards
     height: 80vh;
     background-color: $floral-white;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  
-  .hero-intro h3 {
+  .hero-intro h3{
     color: $black;
     font-family: $font-family;
     font-size: 1.2rem;
+    margin-left: -50%;
     padding: 5px;
+    margin-bottom: 10px;
     &::after {
       content: "";
       width: 3px;
@@ -50,13 +55,15 @@ media queries for large screens afterwards
       border-radius: 50%;
     }
   }
-  .hero-lg-intro h2 {
+  .hero-lg-intro h2{
     font-family: $font-family;
     padding: 5px;
     color: $red;
     font-size: 1.9rem;
     line-height: 35px;
     width: 240px;
+    margin-left: 8%;
+    margin-bottom: 10px;
     &::after {
       content: "";
       width: 5px;
@@ -69,14 +76,16 @@ media queries for large screens afterwards
       color: $grey;
     }
   }
-  .hero-text p {
+  .hero-text{
+    width: 250px; 
+    margin-bottom: 18px; 
+    margin-left: 53px;
+    p {
     color: rgba(0, 12, 20, 0.8);
     font-family: $font-family;
     font-size: 0.8rem;
-    padding: 10px 5px;
-    line-height: 18px;
-    width: 90%;
-    
+    line-height: 18px; 
+   }
   }
   .hero-btn {
     background-color: $red;
@@ -89,13 +98,13 @@ media queries for large screens afterwards
     padding: 10px 5px;
     font-size: .8rem;
     text-align: center;
-    margin: 10px 5px;
-  }
+    margin-left: -60px;
+  } 
 
 /*   Hero-section media queries for large screens */
 @media screen and(min-width:400px){
     .hero-text p {
-        width: 70%;
+        width: 250px;
     }
 }
 @media screen and (min-width: 425px){
@@ -105,6 +114,7 @@ media queries for large screens afterwards
       .hero-intro h3 {
         font-size: 1.8rem;
         padding: 10px;
+        margin-left: -134px;
         &::after {
           content: "";
           width: 5px;
@@ -127,14 +137,15 @@ media queries for large screens afterwards
         font-size: 1rem;
         padding: 15px 10px;
         line-height: 25px;
-        width: 380px;
+        width: 300px;
+        margin-left: -48px;
       }
       .hero-btn {
         width: 180px;
         height: 50px;
         padding: 10px 5px;
         font-size: 1rem;
-        margin: 15px 5px;
+        margin-left: -95px;
       }
 }
 @media screen and (min-width: 576px){
@@ -143,20 +154,26 @@ media queries for large screens afterwards
       }
       .hero-intro h3 {
         font-size: 2rem;
+        margin-left: -240px;
       }
       .hero-lg-intro h2 {
         font-size: 3.2rem;
         line-height: 50px;
+        margin-left: -125px;
         &::after {
           content: "";
           width: 8px;
           height: 8px;
         }
       }
+      .hero-text p{
+        margin-left: -138px;
+      }
       .hero-btn {
         width: 200px;
         height: 50px;
         font-size: 1.1rem;
+        margin-left: -250px;
       }
 }
 @media screen and (min-width: 768px){
@@ -165,7 +182,8 @@ media queries for large screens afterwards
       }
       .hero-intro h3 {
         font-size: 2rem;
-        padding: 15px;
+        margin-left: -270px;
+        margin-top:30px ;
         &::after {
           content: "";
           width: 6px;
@@ -174,10 +192,12 @@ media queries for large screens afterwards
         }
       }
       .hero-lg-intro h2 {
-        padding: 15px;
+        padding: 15px 15px 0px;
         font-size: 3.5rem;
-        line-height: 55px;
+        line-height: 58px;
         width: 450px;
+        margin-left: -98px;
+        margin-bottom: 10px;
         &::after {
           content: "";
           width: 10px;
@@ -187,26 +207,78 @@ media queries for large screens afterwards
       .hero-text p {
         font-size: 1rem;
         padding: 20px 15px;
-        line-height: 20px;
-        width: 450px;
+        line-height: 25px;
+        width: 360px;
+        margin-left: -170px;
       }
       .hero-btn {
         width: 200px;
         height: 50px;
         padding: 10px 5px;
         font-size: 1.1rem;
-        margin: 20px 15px;
+        margin-left: -310px;
       }
 }
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1000px){
+  .container {
+      height: 100vh;
+      //padding: 5px;
+    }
+    .hero-intro {
+        h3 {
+      font-size: 2rem;
+      margin-left: -350px;
+      margin-top: -80px;
+      margin-bottom: 0px;
+     }
+      
+      &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        
+      }
+    }
+    .hero-lg-intro h2 {
+      padding: 0px 30px;
+      font-size: 4rem;
+      line-height: 70px;
+      width: 500px;
+      margin-left: -240px;
+      margin-bottom: 0px;
+      &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+      }
+    }
+    
+    .hero-text{
+        margin-left: -170px;
+        padding: 0px 30px;
+      p {
+          font-size: .9rem;
+          line-height: 22px;
+        }
+    }
+    .hero-btn {
+      width: 200px;
+      height: 50px;
+      font-size: 1.1rem;
+      margin-left: -470px;;
+    }
+}
+@media screen and (min-width: 1200px){
     .container {
         height: 100vh;
         //padding: 5px;
       }
       .hero-intro {
-          padding: 20px 30px 0px;
           h3 {
         font-size: 2.2rem;
+        margin-left: -500px;
+        margin-top: -120px;
+        margin-bottom: 0px;
        }
         
         &::after {
@@ -219,18 +291,19 @@ media queries for large screens afterwards
       .hero-lg-intro h2 {
         padding: 0px 30px;
         font-size: 4.2rem;
-        line-height: 70px;
+        line-height: 75px;
         width: 500px;
-        margin: 20px;
+        margin-left: -520px;
+        margin-bottom: 0px;
         &::after {
           content: "";
-          width: 11px;
-          height: 11px;
+          width: 13px;
+          height: 13px;
         }
       }
       
       .hero-text{
-          margin-left: 10px;
+          margin-left: -480px;
           padding: 0px 30px;
         p {
             font-size: .9rem;
@@ -242,53 +315,52 @@ media queries for large screens afterwards
         width: 200px;
         height: 50px;
         font-size: 1.1rem;
-        margin-left: 50px;;
+        margin-left: -780px;;
       }
 }
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1440px){
     .container {
         height: 100vh;
         //padding: 5px;
       }
       .hero-intro {
-          padding: 20px 30px 0px;
           h3 {
-        font-size: 4rem;
-       }
-        
-        &::after {
+        font-size: 2.3rem;
+        margin-top: -100px;
+       &::after {
           content: "";
-          width:20px;
-          height: 20px;
+          width:10px;
+          height: 10px;
           
         }
       }
+    }
       .hero-lg-intro h2 {
-        padding: 0px 30px;
-        font-size: 6.5rem;
+        font-size: 5rem;
         line-height: 100px;
-        width: 800px;
-        margin: 20px;
+        width: 600px;
+        margin-left: -440px;
+        padding-bottom: 20px;
         &::after {
           content: "";
-          width: 20px;
-          height: 20px;
+          width: 15px;
+          height: 15px;
         }
       }
       
       .hero-text{
-          margin-left: 10px;
+          margin-left: -470px;
           padding: 0px 30px;
         p {
-            font-size: 1.8rem;
-            line-height: 35px;
-            width: 700px;
+            font-size: 1.1rem;
+            line-height: 25px;
+            width: 500px;
           }
       }
       .hero-btn {
-        width: 280px;
-        height: 80px;
-        font-size: 2rem;
-        margin-left: 50px;;
+        width: 240px;
+        height: 60px;
+        font-size: 1.3rem;
+        margin-left: -735px;;
       }
 }
