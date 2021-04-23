@@ -99,7 +99,6 @@ button.hamburger {
 }
 
 .about-me {
-  display: none;
   background-color: #000000;
   width: 100%;
   padding: 20px;
@@ -264,7 +263,7 @@ button.hamburger {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .about-me {
     padding: 30px;
   }
@@ -342,40 +341,66 @@ button.hamburger {
 
 @media screen and (min-width: 1440px) {
   .about-me h2 {
-    font-size: 4rem;
+    font-size: 3.3rem;
   }
   .about-me h2::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   .tab {
     top: -50px;
   }
   .tab button {
     width: 150px;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .tabcontent {
-    width: 600px;
+    width: 700px;
     padding-left: 30px;
   }
   .tabcontent h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top: 40px;
   }
   .tabcontent p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 35px;
   }
   .tabcontent .box {
-    left: -150%;
-    top: -60%;
+    left: -560px;
+    top: -230px;
     position: relative;
-    width: 400px;
-    height: 410px;
+    width: 250px;
+    height: 250px;
   }
   .tabcontent img {
-    height: 400px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .tabcontent .box {
+    left: -680px;
+  }
+}
+
+@media screen and (min-width: 1840px) {
+  .tabcontent .box {
+    left: -700px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .tabcontent .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: -800px;
+  }
+  .tabcontent img {
+    height: 300px;
   }
 }
 
