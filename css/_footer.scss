@@ -1,0 +1,90 @@
+$font-family : "Poppins";
+$floral-white : #FBF7EF;
+$red : #FB2335;
+$grey : #B3AA94;
+$black : #000c14;
+$font-family : "Poppins",san-serif;
+
+.footer{
+    background-color: $black;
+    padding: 30px;
+    color: $floral-white;
+    font-family: $font-family;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    .love{
+        padding: 5px;
+        margin-top: 10%;
+        p{
+            font-size: .9rem;
+        }
+
+    }
+    .social-media{
+        padding: 5px 0px;
+        margin-bottom: 10%;
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        li{
+            font-size: .8rem;
+            margin-right: 5px;
+            margin: 4px;
+        }
+    }
+}
+}
+@media screen and (min-width: 576px){
+    .footer{
+        .love{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .social-media{
+        .social-links{
+            li{
+                font-size: 1rem;   
+            }
+        }
+    }
+
+}
+}
+@media screen and (min-width: 768px){
+    .footer{
+        .love{
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        .social-media{
+        .social-links{
+            li{
+                font-size: 1.1rem;   
+        }
+    }
+    }
+}
+}
+@media screen and (min-width:1440px){
+    .footer{
+        .love{
+            p{
+                font-size: 1.6rem;
+            }
+        }
+        .social-media{
+        .social-links{
+            font-size: 1.5rem;
+           
+    }
+}
+    }
+}

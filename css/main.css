@@ -722,6 +722,7 @@ button.hamburger {
 @media screen and (min-width: 1000px) {
   .contact-me .contact-me-header h3 {
     font-size: 2.5rem;
+    margin-left: 3%;
   }
   .contact-me input[type=text], .contact-me input[type=email] {
     font-size: 1.3rem;
@@ -763,6 +764,92 @@ button.hamburger {
     width: 200px;
     height: 60px;
     font-size: 1.3rem;
+  }
+}
+
+.footer {
+  background-color: #000c14;
+  padding: 30px;
+  color: #FBF7EF;
+  font-family: "Poppins", san-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .love {
+  padding: 5px;
+  margin-top: 10%;
+}
+
+.footer .love p {
+  font-size: .9rem;
+}
+
+.footer .social-media {
+  padding: 5px 0px;
+  margin-bottom: 10%;
+}
+
+.footer .social-media .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .social-media .social-links li {
+  font-size: .8rem;
+  margin-right: 5px;
+  margin: 4px;
+}
+
+@media screen and (min-width: 576px) {
+  .footer .love p {
+    font-size: 1.2rem;
+  }
+  .footer .social-media .social-links li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .love p {
+    font-size: 1.4rem;
+  }
+  .footer .social-media .social-links li {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .love p {
+    font-size: 1.6rem;
+  }
+  .footer .social-media .social-links {
+    font-size: 1.5rem;
   }
 }
 
@@ -1152,7 +1239,7 @@ section */
 
 .thank-you .thank-you-header h2 {
   font-size: 2rem;
-  margin: 30px 0px;
+  margin-top: 40%;
 }
 
 .thank-you .pleasant {
