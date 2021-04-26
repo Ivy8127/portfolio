@@ -404,6 +404,194 @@ button.hamburger {
   }
 }
 
+.featured-projects {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Poppins", san-serif;
+  padding: 30px 5px;
+  background-color: #FBF7EF;
+}
+
+.featured-projects-title {
+  margin-left: 18px;
+  font-size: 1.1rem;
+  color: #B3AA94;
+}
+
+.featured-project-image, .featured-project-image-2 {
+  background-image: url("/images/IMG_20200610_143924.jpg");
+  width: 90%;
+  margin: 20px  auto;
+  color: #FBF7EF;
+  background-size: cover;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* add dark overlay to the image  Important*/
+}
+
+.featured-project-image .about-project, .featured-project-image-2 .about-project {
+  padding: 20px;
+}
+
+.featured-project-image .about-project p, .featured-project-image-2 .about-project p {
+  margin: 20px 0px;
+}
+
+.featured-project-image .about-project .tech-stack li, .featured-project-image-2 .about-project .tech-stack li {
+  display: inline;
+  margin-right: 5px;
+  color: #B3AA94;
+}
+
+.featured-project-image .about-project .links, .featured-project-image-2 .about-project .links {
+  padding-top: 20px;
+  color: #B3AA94;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-projects-title {
+    font-size: 1.5rem;
+    padding: 20px 0px;
+  }
+  .featured-project-image {
+    width: 50%;
+    height: 200px;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  .featured-project-image .about-project {
+    padding: 10px;
+    background-color: #B3AA94;
+    position: relative;
+    right: 60%;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    -webkit-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transform: translate(-40px);
+            transform: translate(-40px);
+  }
+  .featured-project-image .about-project p {
+    margin: 10px 0px;
+  }
+  .featured-project-image .about-project .tech-stack {
+    position: relative;
+    bottom: -30%;
+    padding-top: 5px;
+  }
+  .featured-project-image .about-project .links {
+    position: relative;
+    bottom: -25%;
+  }
+  .featured-project-image-2 {
+    width: 50%;
+    height: 200px;
+    margin-top: 10%;
+    margin-right: 44%;
+  }
+  .featured-project-image-2 .about-project {
+    padding: 10px;
+    background-color: #B3AA94;
+    position: relative;
+    left: 60%;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    -webkit-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transform: translate(40px);
+            transform: translate(40px);
+  }
+  .featured-project-image-2 .about-project p {
+    margin: 10px 0px;
+  }
+  .featured-project-image-2 .about-project .tech-stack {
+    position: relative;
+    bottom: -30%;
+    padding-top: 5px;
+  }
+  .featured-project-image-2 .about-project .links {
+    position: relative;
+    bottom: -25%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .featured-projects-title {
+    font-size: 2.5rem;
+    margin-left: 60px;
+  }
+  .about-project h3 {
+    font-size: 1.5rem;
+  }
+  .about-project p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featured-project-image {
+    width: 50%;
+    height: 400px;
+    margin-left: 45%;
+  }
+  .featured-project-image .about-project {
+    -webkit-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background-color: transparent;
+    color: #000c14;
+    width: 70%;
+    position: relative;
+    right: 76%;
+    top: 10%;
+  }
+  .featured-project-image .about-project .tech-stack, .featured-project-image .about-project .links {
+    position: relative;
+    bottom: 0;
+  }
+  .featured-project-image-2 {
+    width: 50%;
+    height: 400px;
+    margin-left: 4%;
+  }
+  .featured-project-image-2 .about-project {
+    -webkit-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background-color: transparent;
+    color: #000c14;
+    width: 70%;
+    position: relative;
+    left: 100%;
+    top: 10%;
+  }
+  .featured-project-image-2 .about-project .tech-stack, .featured-project-image-2 .about-project .links {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .featured-projects-title {
+    font-size: 2.8rem;
+    margin-left: 60px;
+  }
+  .about-project h3 {
+    font-size: 2rem;
+  }
+  .about-project p {
+    font-size: 1.5rem;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -428,7 +616,7 @@ media queries for large screens afterwards
 .container {
   width: 100%;
   height: 80vh;
-  background-color: #fbf7ef;
+  background-color: #FBF7EF;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +634,7 @@ media queries for large screens afterwards
 }
 
 .hero-intro h3 {
-  color: #000000;
+  color: #000c14;
   font-family: "Poppins", san-serif;
   font-size: 1.2rem;
   margin-left: -50%;
@@ -458,7 +646,7 @@ media queries for large screens afterwards
   content: "";
   width: 3px;
   height: 3px;
-  background-color: #fb2335;
+  background-color: #FB2335;
   display: inline-block;
   border-radius: 50%;
 }
@@ -466,7 +654,7 @@ media queries for large screens afterwards
 .hero-lg-intro h2 {
   font-family: "Poppins", san-serif;
   padding: 5px;
-  color: #fb2335;
+  color: #FB2335;
   font-size: 1.9rem;
   line-height: 35px;
   width: 240px;
@@ -478,13 +666,13 @@ media queries for large screens afterwards
   content: "";
   width: 5px;
   height: 5px;
-  background-color: #fb2335;
+  background-color: #FB2335;
   display: inline-block;
   border-radius: 50%;
 }
 
 .hero-lg-intro h2 span {
-  color: #b3aa94;
+  color: #B3AA94;
 }
 
 .hero-text {
@@ -501,11 +689,11 @@ media queries for large screens afterwards
 }
 
 .hero-btn {
-  background-color: #fb2335;
+  background-color: #FB2335;
   width: 140px;
   height: 40px;
-  border: 2px solid #fb2335;
-  color: #fbf7ef;
+  border: 2px solid #FB2335;
+  color: #FBF7EF;
   text-transform: capitalize;
   font-family: "Poppins", san-serif;
   padding: 10px 5px;

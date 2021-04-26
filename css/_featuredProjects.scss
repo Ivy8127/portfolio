@@ -1,0 +1,186 @@
+$font-family : "Poppins";
+$floral-white : #FBF7EF;
+$red : #FB2335;
+$grey : #B3AA94;
+$black : #000c14;
+$font-family : "Poppins",san-serif;
+
+.featured-projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family;
+    padding: 30px 5px;
+    background-color: $floral-white;
+}
+.featured-projects-title {
+    margin-left: 18px;
+    font-size: 1.1rem;
+    color: $grey;
+}
+.featured-project-image , .featured-project-image-2{
+    background-image: url('/images/IMG_20200610_143924.jpg');
+    width: 90%;
+    margin: 20px  auto;
+    color: $floral-white;
+    background-size: cover;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+   /* add dark overlay to the image  Important*/
+    .about-project{
+        padding: 20px;
+        p{
+            margin: 20px 0px;
+        }
+        .tech-stack{
+         li{
+            display: inline;
+            margin-right: 5px;
+            color: $grey;
+         }
+    
+        }
+        .links{
+            padding-top: 20px;
+            color: $grey;
+        }
+}
+}
+@media screen and (min-width: 768px){
+    .featured-projects-title {
+        font-size: 1.5rem;
+        padding: 20px 0px;
+    }
+    .featured-project-image{
+        width: 50%;
+        height: 200px;
+        margin-top: 10%;
+        margin-left: 40%;
+        .about-project{
+            padding: 10px;
+            background-color: $grey;
+            position: relative;
+            right: 60%;
+            width: 100%;
+            height:90%;
+            top: 5%;
+            transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+            transform: translate(-40px);
+            p{
+                margin: 10px 0px;
+            }
+            .tech-stack{
+               position: relative;
+               bottom: -30%;
+               padding-top: 5px;
+            }
+            .links{
+                position: relative;
+                bottom: -25%;
+            }
+        }
+    }
+    .featured-project-image-2{
+        width: 50%;
+        height: 200px;
+        margin-top: 10%;
+        margin-right: 44%;
+        .about-project{
+            padding: 10px;
+            background-color: $grey;
+            position: relative;
+            left: 60%;
+            width: 100%;
+            height:90%;
+            top: 5%;
+            transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+            transform: translate(40px);
+            p{
+                margin: 10px 0px;
+            }
+            .tech-stack{
+               position: relative;
+               bottom: -30%;
+               padding-top: 5px;
+            }
+            .links{
+                position: relative;
+                bottom: -25%;
+               
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+    .featured-projects-title {
+        font-size: 2.5rem;
+        margin-left: 60px; 
+    }
+    .about-project{
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .featured-project-image{
+        width: 50%;
+        height: 400px;
+        margin-left: 45%;
+    .about-project{
+        transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+        background-color: transparent;
+        color: $black;
+        width: 70%;
+        position: relative;
+        right: 76%;
+        top: 10%;
+        .tech-stack,.links{
+            position: relative;
+            bottom: 0;
+            //color: $black;
+         }
+    }
+    
+}
+    .featured-project-image-2{
+        width: 50%;
+        height: 400px;
+        margin-left: 4%;
+        .about-project{
+            transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+            background-color: transparent;
+            color: $black;
+            width: 70%;
+            position: relative;
+            left: 100%;
+            top: 10%;
+            .tech-stack,.links{
+                position: relative;
+                bottom: 0;
+             }
+        }
+        
+    }
+}
+@media screen and (min-width: 1440px){
+    .featured-projects-title {
+        font-size: 2.8rem;
+        margin-left: 60px; 
+    }
+    .about-project{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    
+}

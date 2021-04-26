@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!-- <script
+      src="https://kit.fontawesome.com/6b55cd64b6.js"
+      crossorigin="anonymous"
+    ></script> -->
     <title></title>
   </head>
   <body>
@@ -36,87 +40,209 @@
         <h3>Hi! I'm Ivy</h3>
       </div>
 
-     <div class="hero-lg-intro">
-      <h2>I create <span>stuff </span> on the web</h2>
-     </div>
+      <div class="hero-lg-intro">
+        <h2>I create <span>stuff </span> on the web</h2>
+      </div>
       <div class="hero-text">
         <p>
           I am a Software Engineer with experience in JavaScript , ES6 , CSS ,
           Sass , Python , Django , HTML , Postgresql and UI/UX design.
         </p>
-      </div>   
+      </div>
       <button class="hero-btn">Get in touch</button>
     </section>
     <!--About me section-->
     <section class="about-me">
-      <h2>About me </h2>
-      <hr>
+      <h2>About me</h2>
+      <hr />
       <!-- Tab links -->
       <div class="vertical-tab">
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'About')" id ="defaultOpen">
-          About
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Job')">Job</button>
-        <button class="tablinks" onclick="openTab(event, 'Skill')">
-          Skill
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Bonus')">
-          Bonus
-        </button>
-      </div>
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="openTab(event, 'About')"
+            id="defaultOpen"
+          >
+            About
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Job')">Job</button>
+          <button class="tablinks" onclick="openTab(event, 'Skill')">
+            Skill
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Bonus')">
+            Bonus
+          </button>
+        </div>
 
-      <!-- Tab content -->
-      <div id="About" class="tabcontent">
-        <h3>Full Stack Web Dev</h3>
-        <p>
-          I am a Software Engineer currently based in Nairobi, Kenya. I am
-          currently in my last year of my Computer Science degree. I sometimes
-          do remote freelancing in my spare time and I'm passionate about
-          creating better spaces on the internet.
-        </p>
-        <div class="box">
-          <img src="/images/IMG_20200610_143924.jpg" alt="">
+        <!-- Tab content -->
+        <div id="About" class="tabcontent">
+          <h3>Full Stack Web Dev</h3>
+          <p>
+            I am a Software Engineer currently based in Nairobi, Kenya. I am
+            currently in my last year of my Computer Science degree. I sometimes
+            do remote freelancing in my spare time and I'm passionate about
+            creating better spaces on the internet.
+          </p>
+          <div class="box">
+            <img src="/images/IMG_20200610_143924.jpg" alt="" />
+          </div>
         </div>
-        </div>
-        
 
-      <div id="Job" class="tabcontent">
-        <h3>Software Engineer @RB</h3>
-        <p>
-          I am currently in an internship where I specialize in full-stack web
-          development and UI/UX design(which has become favorite) but I have
-          also dabbled in machine learning and data science projects just for
-          fun!
-        </p>
-        <div class="box">
-          <img src="/images/IMG_20200610_143924.jpg" alt="">
+        <div id="Job" class="tabcontent">
+          <h3>Software Engineer @RB</h3>
+          <p>
+            I am currently in an internship where I specialize in full-stack web
+            development and UI/UX design(which has become favorite) but I have
+            also dabbled in machine learning and data science projects just for
+            fun!
+          </p>
+          <div class="box">
+            <img src="/images/IMG_20200610_143924.jpg" alt="" />
+          </div>
         </div>
-      </div>
 
-      <div id="Skill" class="tabcontent">
-        <h3>Intermediate - but deadly!</h3>
-        <p>
-          I am proficient in JavaScript, ES6 Syntax, Databases and Database
-          design, CSS3 ,HTML5 ,Sass ,Python, Laravel and Writing clean code. Not to
-          bag but I self teach myself everything from scratch :)
-        </p>
-        <div class="box">
-          <img src="/images/IMG_20200610_143924.jpg" alt="">
+        <div id="Skill" class="tabcontent">
+          <h3>Intermediate - but deadly!</h3>
+          <p>
+            I am proficient in JavaScript, ES6 Syntax, Databases and Database
+            design, CSS3 ,HTML5 ,Sass ,Python, Laravel and Writing clean code.
+            Not to bag but I self teach myself everything from scratch :)
+          </p>
+          <div class="box">
+            <img src="/images/IMG_20200610_143924.jpg" alt="" />
+          </div>
+        </div>
+        <div id="Bonus" class="tabcontent">
+          <h3>Bonus Time!</h3>
+          <p>
+            In my spare time, I like to relax to beauty Youtube videos and
+            Stories about space. I'm also a big cat lover -I totally want to pat
+            one now ! --insert cat emoji
+          </p>
+          <div class="box">
+            <img src="/images/IMG_20200610_143924.jpg" alt="" />
+          </div>
         </div>
       </div>
-      <div id="Bonus" class="tabcontent">
-        <h3>Bonus Time!</h3>
-        <p>
-          In my spare time, I like to relax to beauty Youtube videos and Stories
-          about space. I'm also a big cat lover -I totally want to pat one now !
-          --insert cat emoji
-        </p>
-        <div class="box">
-          <img src="/images/IMG_20200610_143924.jpg" alt="">
+    </section>
+    <section class="featured-projects">
+      <div class="featured-projects-title"><h2>Featured Projects</h2></div>
+      <div class="featured-project-image">
+        <div class="about-project">
+          <h3>Cat Image Generator</h3>
+          <p>
+            A webapp that consumes an an API on the backend and displays random
+            cats on the frontend everytime the refresh button is clicked.
+          </p>
+          <ul class="tech-stack">
+            <li>Django</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>Cat Web API</li>
+          </ul>
+          <ul class="links">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 
+                  0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44
+                   0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16
+                    2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 
+                    5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                    6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+      <div class="featured-project-image-2">
+        <div class="about-project">
+          <h3>Esovis Virtual Reality</h3>
+          <p>
+            A webapp that creates a Virtual Tours Experience at different
+            destinations.The tours are purchased through the app via Paypal and
+            Debit/Credit cards enabling Ecommerce functionality
+          </p>
+          <ul class="tech-stack">
+            <li>Django</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+          </ul>
+          <ul class="links">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 
+                  0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44
+                   0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16
+                    2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 
+                    5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                    6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project-image">
+        <div class="about-project">
+          <h3>Vanilla JS Todo App</h3>
+          <p>A simple todo app with CRUD functionality</p>
+          <ul class="tech-stack">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <ul class="links">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 
+                  0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44
+                   0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16
+                    2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 
+                    5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                    6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <script src="app.js"></script>
