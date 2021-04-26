@@ -18,6 +18,9 @@
     <title></title>
   </head>
   <body>
+    <!--Nav Bar
+       Section-->
+
     <nav>
       <!--let's make a logo-->
 
@@ -34,7 +37,10 @@
         </span>
       </button>
     </nav>
-    <!--Hero section-->
+
+    <!--Hero 
+      section-->
+
     <section class="container">
       <div class="hero-intro">
         <h3>Hi! I'm Ivy</h3>
@@ -51,7 +57,10 @@
       </div>
       <button class="hero-btn">Get in touch</button>
     </section>
-    <!--About me section-->
+
+    <!--About me 
+      section-->
+
     <section class="about-me">
       <h2>About me</h2>
       <hr />
@@ -125,6 +134,11 @@
         </div>
       </div>
     </section>
+
+    <!--
+        Featured Projects Section
+      -->
+
     <section class="featured-projects">
       <div class="featured-projects-title"><h2>Featured Projects</h2></div>
       <div class="featured-project-image">
@@ -210,7 +224,11 @@
       <div class="featured-project-image">
         <div class="about-project">
           <h3>Vanilla JS Todo App</h3>
-          <p>A simple todo app with CRUD functionality</p>
+          <p>
+            A simple todo app built with Vanilla Html,CSS and Javascript where
+            you can Create, Read ,Update and Delete a task all with CSS
+            animations
+          </p>
           <ul class="tech-stack">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -244,6 +262,28 @@
         </div>
       </div>
     </section>
+
+    <!--Contact me form section-->
+    <section class="contact-me">
+      <div class="contact-me-header"><h3>Contact me</h3></div>
+      <form action="">
+        <input type="text" name="Name" placeholder="Name" required />
+        <input type="email" name="Email" placeholder="Email" required />
+        <label for="Message">Message</label>
+        <textarea
+          name="Message"
+          id="Message"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        <button type="submit" class="submitBtn">Send</button>
+      </form>
+    </section>
+
+    <!--
+      Thank You Section
+    -->
 
     <script src="app.js"></script>
   </body>

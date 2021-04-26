@@ -431,7 +431,7 @@ button.hamburger {
   margin: 20px  auto;
   color: #FBF7EF;
   background-size: cover;
-  height: 350px;
+  height: 380px;
   background-repeat: no-repeat;
   background-position: center;
   /* add dark overlay to the image  Important*/
@@ -466,10 +466,11 @@ button.hamburger {
     height: 200px;
     margin-top: 10%;
     margin-left: 40%;
+    margin-bottom: 10%;
   }
   .featured-project-image .about-project {
     padding: 10px;
-    background-color: #B3AA94;
+    background-color: #000c14;
     position: relative;
     right: 60%;
     width: 100%;
@@ -495,8 +496,8 @@ button.hamburger {
   .featured-project-image-2 {
     width: 50%;
     height: 200px;
-    margin-top: 10%;
     margin-right: 44%;
+    margin-bottom: 5%;
   }
   .featured-project-image-2 .about-project {
     padding: 10px;
@@ -589,6 +590,179 @@ button.hamburger {
   }
   .about-project p {
     font-size: 1.5rem;
+  }
+}
+
+.contact-me {
+  width: 100%;
+  padding: 30px;
+  background-color: #FB2335;
+  color: #FBF7EF;
+  font-family: "Poppins", san-serif;
+}
+
+.contact-me .contact-me-header h3 {
+  font-size: 1.5rem;
+}
+
+.contact-me .contact-me-header h3::after {
+  content: "";
+  background-color: #FBF7EF;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.contact-me input[type=text], .contact-me input[type=email] {
+  background-color: transparent;
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid #FBF7EF;
+  padding: 5px;
+  color: #FBF7EF;
+  outline: none;
+  margin: 5px 0px;
+  font-family: "Poppins", san-serif;
+  font-size: 1rem;
+}
+
+.contact-me input[type=text]::-webkit-input-placeholder, .contact-me input[type=email]::-webkit-input-placeholder {
+  color: #FBF7EF;
+  opacity: 1;
+}
+
+.contact-me input[type=text]:-ms-input-placeholder, .contact-me input[type=email]:-ms-input-placeholder {
+  color: #FBF7EF;
+  opacity: 1;
+}
+
+.contact-me input[type=text]::-ms-input-placeholder, .contact-me input[type=email]::-ms-input-placeholder {
+  color: #FBF7EF;
+  opacity: 1;
+}
+
+.contact-me input[type=text]::placeholder, .contact-me input[type=email]::placeholder {
+  color: #FBF7EF;
+  opacity: 1;
+}
+
+.contact-me label {
+  display: block;
+  margin: 15px 0px 10px;
+}
+
+.contact-me textarea {
+  background-color: transparent;
+  border: 1px solid #FBF7EF;
+  margin: 5px 0px;
+  outline: none;
+  resize: none;
+  margin: 5px 0px;
+  width: 85%;
+  padding: 10px;
+  color: #FBF7EF;
+  font-family: "Poppins", san-serif;
+}
+
+.contact-me .submitBtn {
+  display: block;
+  padding: 15px 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #FBF7EF;
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .contact-me input[type=text], .contact-me input[type=email] {
+    width: 70%;
+  }
+  .contact-me textarea {
+    width: 70%;
+  }
+  .contact-me .submitBtn {
+    width: 180px;
+    font-size: 1rem;
+    padding: 20px 30px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-me .contact-me-header h3 {
+    font-size: 2rem;
+  }
+  .contact-me .contact-me-header h3::after {
+    width: 9px;
+    height: 9px;
+  }
+  .contact-me input[type=text], .contact-me input[type=email] {
+    font-size: 1.2rem;
+  }
+  .contact-me label {
+    font-size: 1.2rem;
+  }
+  .contact-me textarea {
+    margin-bottom: 10px;
+  }
+  .contact-me .submitBtn {
+    font-size: 1.2rem;
+    width: 180px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact-me .contact-me-header h3 {
+    font-size: 2.5rem;
+  }
+  .contact-me input[type=text], .contact-me input[type=email] {
+    font-size: 1.3rem;
+    width: 50%;
+    margin: 15px 0px;
+    margin-left: 25%;
+  }
+  .contact-me label {
+    font-size: 1.3rem;
+    margin-left: 25%;
+  }
+  .contact-me textarea {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.2rem;
+  }
+  .contact-me .submitBtn {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-me .contact-me-header h3 {
+    font-size: 3.5rem;
+  }
+  .contact-me .contact-me-header h3::after {
+    width: 12px;
+    height: 12px;
+  }
+  .contact-me input[type=text], .contact-me input[type=email] {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    margin-left: 25%;
+  }
+  .contact-me label {
+    font-size: 1.5rem;
+  }
+  .contact-me .submitBtn {
+    width: 200px;
+    height: 60px;
+    font-size: 1.3rem;
   }
 }
 

@@ -1,0 +1,174 @@
+$font-family : "Poppins";
+$floral-white : #FBF7EF;
+$red : #FB2335;
+$grey : #B3AA94;
+$black : #000c14;
+$font-family : "Poppins",san-serif;
+
+
+.contact-me{
+    width: 100%;
+    padding: 30px;
+    background-color: $red;
+    color: $floral-white;
+    font-family: $font-family;
+    .contact-me-header h3{
+        font-size: 1.5rem;
+        &::after {
+            content: "";
+            background-color: $floral-white;
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 50%;
+          }
+    }
+    
+    input[type=text],input[type=email]{
+        background-color: transparent;
+        //color: $floral-white;
+        width: 85%;
+        border: none;
+        border-bottom: 1px solid $floral-white;
+        padding: 5px;
+        color: $floral-white;
+        outline: none;
+        margin: 5px 0px;
+        font-family: $font-family;
+        font-size: 1rem;
+        &::placeholder { 
+            color: $floral-white;
+            opacity: 1;
+          }
+    }
+    label{
+        display: block;
+        margin: 15px 0px 10px;
+    }
+    textarea{
+        background-color: transparent;
+        border:1px solid $floral-white;
+        margin: 5px 0px;
+        outline: none;
+        resize: none;
+        margin: 5px 0px;
+        width: 85%;
+        padding: 10px;
+        color: $floral-white;
+        font-family: $font-family;
+    }
+    .submitBtn{
+        display: block;
+        padding: 15px 30px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid $floral-white;
+        color: white;
+        text-transform: uppercase;
+        font-size: .8rem;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        margin:10px 0px; 
+    }
+   
+}
+@media screen and (min-width: 576px){
+    .contact-me{
+        input[type=text],input[type=email]{
+            width: 70%;
+        }
+        textarea{
+            width: 70%;
+        }
+        .submitBtn{
+            width: 180px; 
+            font-size: 1rem;
+            padding: 20px 30px;
+            height: 50px;
+        }
+    }
+    
+
+}
+@media screen and (min-width: 768px){
+    .contact-me{
+        .contact-me-header h3{
+            font-size: 2rem;
+            &::after {
+                width: 9px;
+                height: 9px;
+              }
+        }
+        input[type=text],input[type=email]{
+            font-size: 1.2rem;
+        }
+        label{
+            font-size: 1.2rem;
+        }
+        textarea{
+            margin-bottom:10px;
+        }
+        .submitBtn{
+            font-size: 1.2rem;
+            width: 180px;
+            height: 55px;
+        }
+       
+       
+    }
+}
+@media screen and (min-width:1000px){
+    .contact-me{
+        .contact-me-header h3{
+            font-size: 2.5rem;
+        }
+        input[type=text],input[type=email]{
+            font-size: 1.3rem;
+            width: 50%;
+            margin: 15px 0px;
+            margin-left: 25%;
+        }
+        label{
+            font-size: 1.3rem;
+            margin-left: 25%;
+        }
+        textarea{
+            width: 50%;
+            margin-left: 25%;
+            font-size: 1.2rem;
+        }
+        .submitBtn{
+            margin-left: 25%;
+        }
+    }
+
+}
+@media screen and (min-width: 1440px){
+    .contact-me{
+        .contact-me-header h3{
+            font-size: 3.5rem;
+            &::after{
+                width: 12px;
+                height: 12px;
+            }
+        }
+        input[type=text],input[type=email]{
+            font-size: 1.5rem;
+            margin: 20px 0px;
+            margin-left: 25%;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        .submitBtn{
+            width: 200px;
+            height: 60px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+
+
