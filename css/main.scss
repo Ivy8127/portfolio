@@ -18,6 +18,9 @@
     $grey : #B3AA94;
     $black : #000c14;
     $font-family : "Poppins",san-serif;
+    &::selection{
+      background-color: $red;
+    }
 }
 li{
     list-style-type: none;

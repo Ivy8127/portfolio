@@ -425,8 +425,9 @@ button.hamburger {
   color: #B3AA94;
 }
 
-.featured-project-image, .featured-project-image-2 {
-  background-image: url("/images/IMG_20200610_143924.jpg");
+.featured-project-image-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/todo.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/todo.png");
   width: 90%;
   margin: 20px  auto;
   color: #FBF7EF;
@@ -434,26 +435,96 @@ button.hamburger {
   height: 380px;
   background-repeat: no-repeat;
   background-position: center;
-  /* add dark overlay to the image  Important*/
 }
 
-.featured-project-image .about-project, .featured-project-image-2 .about-project {
+.featured-project-image-3 .about-project {
   padding: 20px;
 }
 
-.featured-project-image .about-project p, .featured-project-image-2 .about-project p {
+.featured-project-image-3 .about-project p {
   margin: 20px 0px;
 }
 
-.featured-project-image .about-project .tech-stack li, .featured-project-image-2 .about-project .tech-stack li {
+.featured-project-image-3 .about-project .tech-stack li {
   display: inline;
   margin-right: 5px;
-  color: #B3AA94;
+  color: #FBF7EF;
 }
 
-.featured-project-image .about-project .links, .featured-project-image-2 .about-project .links {
+.featured-project-image-3 .about-project .links {
   padding-top: 20px;
-  color: #B3AA94;
+}
+
+.featured-project-image-3 .about-project .links a {
+  color: #FBF7EF;
+}
+
+.featured-project-image-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/esovis.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/esovis.png");
+  width: 90%;
+  margin: 20px  auto;
+  color: #FBF7EF;
+  background-size: cover;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.featured-project-image-2 .about-project {
+  padding: 20px;
+}
+
+.featured-project-image-2 .about-project p {
+  margin: 20px 0px;
+}
+
+.featured-project-image-2 .about-project .tech-stack li {
+  display: inline;
+  margin-right: 5px;
+  color: #FBF7EF;
+}
+
+.featured-project-image-2 .about-project .links {
+  padding-top: 20px;
+}
+
+.featured-project-image-2 .about-project .links a {
+  color: #FBF7EF;
+}
+
+.featured-project-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/cat.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/cat.png");
+  width: 90%;
+  margin: 20px  auto;
+  color: #FBF7EF;
+  background-size: cover;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.featured-project-image .about-project {
+  padding: 20px;
+}
+
+.featured-project-image .about-project p {
+  margin: 20px 0px;
+}
+
+.featured-project-image .about-project .tech-stack li {
+  display: inline;
+  margin-right: 5px;
+  color: #FBF7EF;
+}
+
+.featured-project-image .about-project .links {
+  padding-top: 20px;
+}
+
+.featured-project-image .about-project .links a {
+  color: #FBF7EF;
 }
 
 @media screen and (min-width: 768px) {
@@ -461,14 +532,14 @@ button.hamburger {
     font-size: 1.5rem;
     padding: 20px 0px;
   }
-  .featured-project-image {
+  .featured-project-image, .featured-project-image-3 {
     width: 50%;
     height: 200px;
     margin-top: 10%;
     margin-left: 40%;
     margin-bottom: 10%;
   }
-  .featured-project-image .about-project {
+  .featured-project-image .about-project, .featured-project-image-3 .about-project {
     padding: 10px;
     background-color: #000c14;
     position: relative;
@@ -481,17 +552,23 @@ button.hamburger {
     -webkit-transform: translate(-40px);
             transform: translate(-40px);
   }
-  .featured-project-image .about-project p {
+  .featured-project-image .about-project p, .featured-project-image-3 .about-project p {
     margin: 10px 0px;
   }
-  .featured-project-image .about-project .tech-stack {
+  .featured-project-image .about-project .tech-stack, .featured-project-image-3 .about-project .tech-stack {
     position: relative;
     bottom: -30%;
     padding-top: 5px;
   }
-  .featured-project-image .about-project .links {
+  .featured-project-image .about-project .tech-stack li, .featured-project-image-3 .about-project .tech-stack li {
+    color: #B3AA94;
+  }
+  .featured-project-image .about-project .links, .featured-project-image-3 .about-project .links {
     position: relative;
     bottom: -25%;
+  }
+  .featured-project-image .about-project .links a, .featured-project-image-3 .about-project .links a {
+    color: #B3AA94;
   }
   .featured-project-image-2 {
     width: 50%;
@@ -520,9 +597,15 @@ button.hamburger {
     bottom: -30%;
     padding-top: 5px;
   }
+  .featured-project-image-2 .about-project .tech-stack li {
+    color: #B3AA94;
+  }
   .featured-project-image-2 .about-project .links {
     position: relative;
     bottom: -25%;
+  }
+  .featured-project-image-2 .about-project .links a {
+    color: #B3AA94;
   }
 }
 
@@ -540,12 +623,12 @@ button.hamburger {
 }
 
 @media screen and (min-width: 1200px) {
-  .featured-project-image {
+  .featured-project-image, .featured-project-image-3 {
     width: 50%;
     height: 400px;
     margin-left: 45%;
   }
-  .featured-project-image .about-project {
+  .featured-project-image .about-project, .featured-project-image-3 .about-project {
     -webkit-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     background-color: transparent;
@@ -555,7 +638,7 @@ button.hamburger {
     right: 76%;
     top: 10%;
   }
-  .featured-project-image .about-project .tech-stack, .featured-project-image .about-project .links {
+  .featured-project-image .about-project .tech-stack, .featured-project-image .about-project .links, .featured-project-image-3 .about-project .tech-stack, .featured-project-image-3 .about-project .links {
     position: relative;
     bottom: 0;
   }
@@ -826,6 +909,10 @@ button.hamburger {
   margin: 4px;
 }
 
+.footer .social-media .social-links a {
+  color: #FBF7EF;
+}
+
 @media screen and (min-width: 576px) {
   .footer .love p {
     font-size: 1.2rem;
@@ -858,6 +945,14 @@ button.hamburger {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: #FB2335;
+}
+
+*::selection {
+  background-color: #FB2335;
 }
 
 li {

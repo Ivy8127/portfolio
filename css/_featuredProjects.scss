@@ -19,8 +19,8 @@ $font-family : "Poppins",san-serif;
     font-size: 1.1rem;
     color: $grey;
 }
-.featured-project-image , .featured-project-image-2{
-    background-image: url('/images/IMG_20200610_143924.jpg');
+.featured-project-image-3{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/todo.png');
     width: 90%;
     margin: 20px  auto;
     color: $floral-white;
@@ -28,7 +28,6 @@ $font-family : "Poppins",san-serif;
     height: 380px;
     background-repeat: no-repeat;
     background-position: center;
-   /* add dark overlay to the image  Important*/
     .about-project{
         padding: 20px;
         p{
@@ -38,13 +37,81 @@ $font-family : "Poppins",san-serif;
          li{
             display: inline;
             margin-right: 5px;
-            color: $grey;
+            color: $floral-white;
          }
     
         }
         .links{
             padding-top: 20px;
-            color: $grey;
+           a{
+            color: $floral-white;
+           }
+        }
+}
+
+
+}
+.featured-project-image-2{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/esovis.png');
+    //box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    //box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 90%;
+    margin: 20px  auto;
+    color: $floral-white;
+    background-size: cover;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+    .about-project{
+        padding: 20px;
+        p{
+            margin: 20px 0px;
+        }
+        .tech-stack{
+         li{
+            display: inline;
+            margin-right: 5px;
+            color: $floral-white;
+         }
+    
+        }
+        .links{
+            padding-top: 20px;
+           a{
+            color: $floral-white;
+           }
+        }
+}
+
+
+}
+.featured-project-image {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/cat.png');
+    width: 90%;
+    margin: 20px  auto;
+    color: $floral-white;
+    background-size: cover;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+    .about-project{
+        padding: 20px;
+        p{
+            margin: 20px 0px;
+        }
+        .tech-stack{
+         li{
+            display: inline;
+            margin-right: 5px;
+            color: $floral-white;
+         }
+    
+        }
+        .links{
+            padding-top: 20px;
+           a{
+            color: $floral-white;
+           }
         }
 }
 }
@@ -53,8 +120,7 @@ $font-family : "Poppins",san-serif;
         font-size: 1.5rem;
         padding: 20px 0px;
     }
-    //
-    .featured-project-image{
+    .featured-project-image,.featured-project-image-3{
         width: 50%;
         height: 200px;
         margin-top: 10%;
@@ -77,10 +143,16 @@ $font-family : "Poppins",san-serif;
                position: relative;
                bottom: -30%;
                padding-top: 5px;
+               li{
+                   color: $grey;
+               }
             }
             .links{
                 position: relative;
                 bottom: -25%;
+                    a{
+                        color: $grey;
+                       }
             }
         }
     }
@@ -106,14 +178,21 @@ $font-family : "Poppins",san-serif;
                position: relative;
                bottom: -30%;
                padding-top: 5px;
+               li{
+                color: $grey;
+            }
             }
             .links{
                 position: relative;
                 bottom: -25%;
+                a{
+                    color: $grey;
+                   }
                
             }
         }
     }
+    
 }
 @media screen and (min-width: 1000px){
     .featured-projects-title {
@@ -131,7 +210,7 @@ $font-family : "Poppins",san-serif;
 
 }
 @media screen and (min-width: 1200px){
-    .featured-project-image{
+    .featured-project-image,.featured-project-image-3{
         width: 50%;
         height: 400px;
         margin-left: 45%;
