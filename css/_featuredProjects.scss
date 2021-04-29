@@ -14,6 +14,18 @@ $font-family : "Poppins",san-serif;
     padding: 30px 5px;
     background-color: $floral-white;
 }
+.more-projects{
+    margin-left: 8px;
+    color: $grey;
+    a{
+    &::after{
+        content :"\2192";
+        display: inline-block;
+    }&:hover{
+        color: $red;
+    }
+}
+}
 .featured-projects-title {
     margin-left: 18px;
     font-size: 1.1rem;
@@ -53,8 +65,6 @@ $font-family : "Poppins",san-serif;
 }
 .featured-project-image-2{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/esovis.png');
-    //box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    //box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     width: 90%;
     margin: 20px  auto;
     color: $floral-white;
@@ -119,6 +129,13 @@ $font-family : "Poppins",san-serif;
     .featured-projects-title {
         font-size: 1.5rem;
         padding: 20px 0px;
+        margin-left: 30px;
+    }
+    .more-projects{
+        margin-top: 30px;
+        a{
+        margin-left: 30px;
+        }
     }
     .featured-project-image,.featured-project-image-3{
         width: 50%;
@@ -207,13 +224,23 @@ $font-family : "Poppins",san-serif;
             font-size: 1.1rem;
         }
     }
+    .more-projects{
+        margin-left: 32px;
+        a{
+            font-size: 1.2rem;
+        }
+    }
 
 }
 @media screen and (min-width: 1200px){
-    .featured-project-image,.featured-project-image-3{
+    .featured-project-image-3{
+        background: url('/images/todo.png');
+        background-size: cover;
+        background-position: center;
         width: 50%;
         height: 400px;
         margin-left: 45%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     .about-project{
         transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
         background-color: transparent;
@@ -225,15 +252,51 @@ $font-family : "Poppins",san-serif;
         .tech-stack,.links{
             position: relative;
             bottom: 0;
-            //color: $black;
          }
+         .links{
+             a:hover{
+                 color: $red;
+             }
+         }
+    }
+
+    }
+    .featured-project-image{
+        background: url('/images/cat.png');
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 400px;
+        margin-left: 45%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    .about-project{
+        transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+        background-color: transparent;
+        color: $black;
+        width: 70%;
+        position: relative;
+        right: 76%;
+        top: 10%;
+        .tech-stack,.links{
+            position: relative;
+            bottom: 0;
+         }
+         .links{
+            a:hover{
+                color: $red;
+            }
+        }
     }
     
 }
     .featured-project-image-2{
+        background: url('/images/esovis.png');
+        background-size: cover;
+        background-position: center;
         width: 50%;
         height: 400px;
         margin-left: 4%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         .about-project{
             transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
             background-color: transparent;
@@ -246,6 +309,11 @@ $font-family : "Poppins",san-serif;
                 position: relative;
                 bottom: 0;
              }
+             .links{
+                a:hover{
+                    color: $red;
+                }
+            }
         }
         
     }
@@ -253,13 +321,19 @@ $font-family : "Poppins",san-serif;
 @media screen and (min-width: 1440px){
     .featured-projects-title {
         font-size: 2.8rem;
-        margin-left: 60px; 
+        margin-left: 88px; 
     }
     .about-project{
         h3{
             font-size: 2rem;
         }
         p{
+            font-size: 1.5rem;
+        }
+    }
+    .more-projects{
+        margin-left: 60px;
+        a{
             font-size: 1.5rem;
         }
     }

@@ -20,7 +20,7 @@ nav {
   width: 70%;
 
   li {
-    font-size: 1.1rem;
+    font-size: 1.9rem;
     font-family: $font-family;
     margin: 20px;
     padding: 30px;
@@ -28,6 +28,11 @@ nav {
   a {
     text-decoration: none;
     color: $red;
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+    &:hover{
+      color: $black;
+    }
   }
 }
 nav .logo a {
@@ -54,6 +59,9 @@ button.hamburger {
       font-size: 1.2rem;
       margin: 0;
       padding: 15px;
+    }
+    a{
+      font-size: 1.1rem;
     }
   }
   .nav-list.open {

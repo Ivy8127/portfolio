@@ -39,6 +39,9 @@ $font-family : "Poppins",san-serif;
         }
         a{
             color: $floral-white;
+            &:hover{
+                color: $red;
+            }
         }
     }
 }

@@ -11,6 +11,7 @@
 *{
     padding:0;
     margin: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     $font-family : "Poppins";
     $floral-white : #FBF7EF;
@@ -20,6 +21,7 @@
     $font-family : "Poppins",san-serif;
     &::selection{
       background-color: $red;
+      color: $floral-white;
     }
 }
 li{
@@ -28,6 +30,32 @@ li{
 a{
     text-decoration: none;
 }
+/* .email{
+  font-family: $font-family;
+  a{
+    position: fixed;
+    top: 59%;
+    left: 84.5%;
+    transform: rotate(90deg);
+    color: $grey;
+    font-size: 14px;
+    transition: all .2s ease-out;
+    &:hover{
+      color: $red;
+    }
+  }
+  .line{
+    hr{
+    width: 101px;
+    position: fixed;
+    top: 90%;
+    left: 88%;
+    height: 1px;
+    transform: translate(-88%,-90%);
+    transform: rotate(90deg);
+    }
+  }
+} */
 /* 
 We start creating for mobile then add
 media queries for large screens afterwards
@@ -37,339 +65,235 @@ media queries for large screens afterwards
  */
  .container {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     background-color: $floral-white;
     padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .hero-intro h3{
-    color: $black;
     font-family: $font-family;
-    font-size: 1.2rem;
-    margin-left: -50%;
-    padding: 5px;
-    margin-bottom: 10px;
-    &::after {
-      content: "";
-      width: 3px;
-      height: 3px;
-      background-color: $red;
-      display: inline-block;
-      border-radius: 50%;
-    }
   }
-  .hero-lg-intro h2{
-    font-family: $font-family;
-    padding: 5px;
-    color: $red;
-    font-size: 1.9rem;
-    line-height: 35px;
-    width: 240px;
-    margin-left: 8%;
-    margin-bottom: 10px;
-    &::after {
-      content: "";
-      width: 5px;
-      height: 5px;
-      background-color: $red;
-      display: inline-block;
-      border-radius: 50%;
-    }
-    span {
-      color: $grey;
-    }
-  }
-  .hero-text{
-    width: 250px; 
-    margin-bottom: 18px; 
-    margin-left: 53px;
-    p {
-    color: rgba(0, 12, 20, 0.8);
-    font-family: $font-family;
-    font-size: 0.8rem;
-    line-height: 18px; 
-   }
-  }
-  .hero-btn {
-    background-color: $red;
-    width: 140px;
-    height: 40px;
-    border: 2px solid $red;
-    color: $floral-white;
-    text-transform: capitalize;
-    font-family: $font-family;
-    padding: 10px 5px;
-    font-size: .8rem;
-    text-align: center;
-    margin-left: -60px;
-  } 
-
-/*   Hero-section media queries for large screens */
-@media screen and(min-width:400px){
-    .hero-text p {
-        width: 250px;
-    }
-}
-@media screen and (min-width: 425px){
-    .container {
-        height: 100vh;
+  .hero-content{
+    padding: 20px 0px;
+    width: 95%;
+    margin: 0px auto 10%; 
+    .hero-lg-intro{
+      h1{
+      font-weight: 600;
+      color: $red;
+      font-size: 35px;
+      padding-bottom: 5px;
+      &::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: $red;
+        display: inline-block;
+        border-radius: 50%;
       }
-      .hero-intro h3 {
-        font-size: 1.8rem;
-        padding: 10px;
-        margin-left: -134px;
+      }
+      h2{
+        font-weight: 800;
+        line-height: 38px;
+        color: $black;
+        font-size: 36px;
+        padding-bottom: 10px;
         &::after {
           content: "";
           width: 5px;
           height: 5px;
-          
+          background-color: $black;
+          display: inline-block;
+          border-radius: 50%;
+        }
+        span {
+          color: $grey;
         }
       }
-      .hero-lg-intro h2 {
-        padding: 10px;
-        font-size: 2.9rem;
-        line-height: 48px;
-        width: 350px;
-        &::after {
-          content: "";
-          width: 6px;
-          height: 6px;
+    }
+     .hero-text{
+       padding: 0px 0px 20px;
+       p {
+        font-size: 0.8rem;
+        line-height: 20px; 
+       }
+     }
+     .hero-btn {
+       button{
+      background-color: $floral-white;
+      width: 150px;
+      height: 40px;
+      outline: none;
+      border: 2px solid $red;
+      color: $red;
+      text-transform: capitalize;
+      padding: 10px 5px;
+      cursor: pointer;
+      font-size: .8rem;
+      text-align: center;
+      font-family: $font-family;
+      transition: background-color 0.4s ease-out;
+      &:hover{
+        background-color: $red;
+        color: $floral-white;
+        transform: scale(1.02);
+      }
+       }
+    } 
+  }
+@media screen and (min-width: 576px){
+    .hero-content{
+      width: 99%;
+      h5{
+        font-size: 15px;
+      }
+      .hero-lg-intro{
+        h1{
+          font-size:38px;
+          &::after{
+            width: 7px;
+            height: 7px;
+          }
+        }
+        h2{
+          font-size: 38px;
+          font-weight: 900;
+          padding-bottom: 20px;
+          &::after{
+            width: 7px;
+            height: 7px;
+          }
         }
       }
-      .hero-text p {
-        font-size: 1rem;
-        padding: 15px 10px;
-        line-height: 25px;
-        width: 300px;
-        margin-left: -48px;
+      .hero-text{
+        width: 80%;
+        padding: 0px 0px 30px;
       }
-      .hero-btn {
+      .hero-btn{
+        button{
         width: 180px;
         height: 50px;
-        padding: 10px 5px;
         font-size: 1rem;
-        margin-left: -95px;
-      }
-}
-@media screen and (min-width: 576px){
-    .container {
-        height: 100vh;
-      }
-      .hero-intro h3 {
-        font-size: 2rem;
-        margin-left: -240px;
-      }
-      .hero-lg-intro h2 {
-        font-size: 3.2rem;
-        line-height: 50px;
-        margin-left: -125px;
-        &::after {
-          content: "";
-          width: 8px;
-          height: 8px;
         }
       }
-      .hero-text p{
-        margin-left: -138px;
-      }
-      .hero-btn {
-        width: 200px;
-        height: 50px;
-        font-size: 1.1rem;
-        margin-left: -250px;
-      }
-}
+    }
+} 
 @media screen and (min-width: 768px){
-    .container {
-        height: 100vh;
-      }
-      .hero-intro h3 {
-        font-size: 2rem;
-        margin-left: -270px;
-        margin-top:30px ;
-        &::after {
-          content: "";
-          width: 6px;
-          height: 6px;
-          
-        }
-      }
-      .hero-lg-intro h2 {
-        padding: 15px 15px 0px;
-        font-size: 3.5rem;
-        line-height: 58px;
-        width: 450px;
-        margin-left: -98px;
-        margin-bottom: 10px;
-        &::after {
-          content: "";
-          width: 10px;
-          height: 10px;
-        }
-      }
-      .hero-text p {
-        font-size: 1rem;
-        padding: 20px 15px;
-        line-height: 25px;
-        width: 360px;
-        margin-left: -170px;
-      }
-      .hero-btn {
-        width: 200px;
-        height: 50px;
-        padding: 10px 5px;
-        font-size: 1.1rem;
-        margin-left: -310px;
-      }
-}
-@media screen and (min-width: 1000px){
   .container {
-      height: 100vh;
-      //padding: 5px;
-    }
-    .hero-intro {
-        h3 {
-      font-size: 2rem;
-      margin-left: -350px;
-      margin-top: -80px;
-      margin-bottom: 0px;
-     }
-      
-      &::after {
-        content: "";
-        width: 6px;
-        height: 6px;
-        
+     padding: 50px;
+  }
+    .hero-content{
+      h5{
+        font-size: 18px;
       }
-    }
-    .hero-lg-intro h2 {
-      padding: 0px 30px;
-      font-size: 4rem;
-      line-height: 70px;
-      width: 500px;
-      margin-left: -240px;
-      margin-bottom: 0px;
-      &::after {
-        content: "";
-        width: 13px;
-        height: 13px;
-      }
-    }
-    
-    .hero-text{
-        margin-left: -170px;
-        padding: 0px 30px;
-      p {
-          font-size: .9rem;
-          line-height: 22px;
-        }
-    }
-    .hero-btn {
-      width: 200px;
-      height: 50px;
-      font-size: 1.1rem;
-      margin-left: -470px;;
-    }
-}
-@media screen and (min-width: 1200px){
-    .container {
-        height: 100vh;
-        //padding: 5px;
-      }
-      .hero-intro {
-          h3 {
-        font-size: 2.2rem;
-        margin-left: -500px;
-        margin-top: -120px;
-        margin-bottom: 0px;
-       }
-        
-        &::after {
-          content: "";
-          width: 7px;
-          height: 7px;
-          
-        }
-      }
-      .hero-lg-intro h2 {
-        padding: 0px 30px;
-        font-size: 4.2rem;
-        line-height: 75px;
-        width: 500px;
-        margin-left: -520px;
-        margin-bottom: 0px;
-        &::after {
-          content: "";
-          width: 13px;
-          height: 13px;
-        }
-      }
-      
-      .hero-text{
-          margin-left: -480px;
-          padding: 0px 30px;
-        p {
-            font-size: .9rem;
-            line-height: 22px;
-            width: 400px;
+      .hero-lg-intro{
+        h1{
+          font-size:40px;
+          &::after{
+            width: 8px;
+            height: 8px;
           }
+        }
+        h2{
+          font-size: 49px;
+          font-weight: bold;
+          padding-bottom: 30px;
+          &::after{
+            width: 9px;
+            height: 9px;
+          }
+        }
       }
-      .hero-btn {
-        width: 200px;
+      .hero-text{
+        width: 70%;
+        p{
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+@media screen and (min-width: 1000px){
+      .hero-content{
+        margin-top: 3%;
+        .hero-lg-intro{
+          h1 {
+        font-size: 4rem;
+        &::after{
+          width: 9px;
+          height: 9px;
+        }
+          }
+          h2{
+            font-size: 4.2rem;
+            line-height: 80px;
+            &::after{
+              width: 10px;
+              height: 10px;
+            }
+          }
+       }
+       .hero-text{
+        width: 60%;
+        p{
+          font-size: 1rem;
+        }
+      }
+      .hero-btn{
+        button{
+        width: 180px;
         height: 50px;
         font-size: 1.1rem;
-        margin-left: -780px;;
+        }
       }
+      }      
+    }
+@media screen and (min-width: 1200px){ 
+  .hero-content{
+    width: 95%;
+    .hero-text{
+      width: 45%;
+      p{
+        line-height: 25px;
+      }
+    }
+  } 
+
 }
 @media screen and (min-width: 1440px){
-    .container {
-        height: 100vh;
-        //padding: 5px;
-      }
-      .hero-intro {
-          h3 {
-        font-size: 2.3rem;
-        margin-top: -100px;
-       &::after {
-          content: "";
-          width:10px;
-          height: 10px;
-          
-        }
-      }
+  .hero-content{
+    h5{
+      font-size: 22px;
     }
-      .hero-lg-intro h2 {
-        font-size: 5rem;
-        line-height: 100px;
-        width: 600px;
-        margin-left: -440px;
-        padding-bottom: 20px;
-        &::after {
-          content: "";
-          width: 15px;
-          height: 15px;
+      .hero-lg-intro{
+        h1 {
+      font-size: 4.5rem;
+      &::after{
+        width: 11px;
+        height: 11px;
+      }
+        }
+        h2{
+          font-size: 4.8rem;
+          &::after{
+            width: 12px;
+            height: 12px;
+          }
         }
       }
-      
       .hero-text{
-          margin-left: -470px;
-          padding: 0px 30px;
-        p {
-            font-size: 1.1rem;
-            line-height: 25px;
-            width: 500px;
-          }
+        width: 44%;
+        p{
+          font-size: 1.1rem;
+          line-height: 27px;
+        }
       }
-      .hero-btn {
-        width: 240px;
+      .hero-btn{
+        button{
+        width: 200px;
         height: 60px;
-        font-size: 1.3rem;
-        margin-left: -735px;;
+        font-size: 1.2rem;
+        }
       }
+  }
 }
+
 
 /* Thank you 
 section */
@@ -387,6 +311,7 @@ section */
   .thank-you-header h2{
     font-size: 2rem;
     margin-top: 40%;
+    //margin-bottom: 40%;
   } .pleasant{
     margin: 0px 0px 10%;
   }
@@ -414,6 +339,7 @@ section */
     font-size: 4rem;
   }
   .pleasant{
+    margin-top: 10%;
     font-size: 1.5rem;
   }
   }

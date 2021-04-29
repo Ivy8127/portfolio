@@ -27,9 +27,9 @@
       <h1 class="logo"><a href="#">Ivy</a></h1>
 
       <ul class="nav-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#About-section">About</a></li>
+        <li><a href="#porfolio-section">Portfolio</a></li>
+        <li><a href="#contact-section">Contact</a></li>
       </ul>
       <button class="hamburger hamburger--slider" type="button">
         <span class="hamburger-box">
@@ -37,31 +37,42 @@
         </span>
       </button>
     </nav>
+ <!--    <div class="email">
+      <a href="">mboyaivy@gmail.com</a>
+      <div class="line"><hr></div>
+    </div> -->
 
     <!--Hero 
       section-->
 
     <section class="container">
+      <div class="hero-content">
       <div class="hero-intro">
-        <h3>Hi! I'm Ivy</h3>
+        <h5>Hi, my name is </h5>
       </div>
 
       <div class="hero-lg-intro">
+        <h1>Ivy Mboya</h1>
         <h2>I create <span>stuff </span> on the web</h2>
       </div>
       <div class="hero-text">
         <p>
-          I am a Software Engineer with experience in JavaScript , ES6 , CSS ,
-          Sass , Python , Django , HTML , Postgresql and UI/UX design.
+         I'm a Nairobi-based Software Engineer specializing in Full-Stack Web Development, UI/UX Design,
+          Data Science as well as crafting wonderful digital experiences for you.
+           I'm currently working as a remote freelancer on client projects -and yours could be one of them too!
         </p>
       </div>
-      <button class="hero-btn">Get in touch</button>
+      <div class="hero-btn">
+        <a href="#contact-section"><button>Get in touch</button></a>
+      </div>
+      
+    </div>
     </section>
 
     <!--About me 
       section-->
 
-    <section class="about-me">
+    <section class="about-me" id="About-section">
       <h2>About me</h2>
       <hr />
       <!-- Tab links -->
@@ -139,7 +150,7 @@
         Featured Projects Section
       -->
 
-    <section class="featured-projects">
+    <section class="featured-projects" id="porfolio-section">
       <div class="featured-projects-title"><h2>Featured Projects</h2></div>
       <div class="featured-project-image">
         <div class="about-project">
@@ -227,7 +238,7 @@
         <div class="about-project">
           <h3>Vanilla JS Todo App</h3>
           <p>
-            A simple todo app built with Vanilla Html,CSS and Javascript where
+            A simple todo app built with Html,CSS and  Vanilla Javascript where
             you can Create, Read ,Update and Delete a task all with CSS
             animations
           </p>
@@ -261,12 +272,15 @@
           </ul>
         </div>
       </div>
+      <div class="more-projects">
+        <a href="https://github.com/Ivy8127?tab=repositories" target="_blank" class="more-projects">More Github Projects </a>
+      </div>
     </section>
 
     <!--Contact me form section-->
-    <section class="contact-me">
+    <section class="contact-me" id="contact-section">
       <div class="contact-me-header"><h3>Contact me</h3></div>
-      <form action="">
+      <form action="https://formsubmit.co/mboyaivy@gmail.com" method="POST">
         <input type="text" name="Name" placeholder="Name" required />
         <input type="email" name="Email" placeholder="Email" required />
         <label for="Message">Message</label>
@@ -299,19 +313,19 @@
           <a href="https://twitter.com/aaaives" target = "_blank"><li> Twitter |</li> </a>
           <a href="https://www.facebook.com/ivy.mboya.12" target = "_blank"><li>Facebook |</li></a>
           <a href="https://github.com/Ivy8127" target = "_blank"><li> Github |</li></a>
-          <a href="https://www.linkedin.com/in/ivy-mboya-077b57177/" target = "_blank"><li>linkedin</li></a>
+          <a href="https://www.linkedin.com/in/ivy-mboya-077b57177/" target = "_blank"><li>LinkedIn</li></a>
         </ul>
       </div>
     </section>
     <!-- 
-    Creating my logo png
-    Fixing the navbar toggle fonts for different screens as well as the navbar links
-    What to do with my hero section in terms of whether to add a pic or not
+    Creating my logo png -Need feedback from Ian by next week Thursday with logo mockups
+    Proper positioning of my created cool ass logo png
     Adding SEO to my head links for more traffic
-    Proper positioning of my then created cool ass logo png
     Adding animate on scroll to my elements using js
-    Working on the contact form to actually get data
-    Adding smoothe scroll from navbar links at the top to the different sections on the page
+    Working on the contact form to actually get data- Formsubmit.co
+    loading spinner
+    fixed vertical bar thingy
+    browser compatibility
    -->
 
     <script src="app.js"></script>
