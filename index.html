@@ -11,11 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <!-- <script
-      src="https://kit.fontawesome.com/6b55cd64b6.js"
-      crossorigin="anonymous"
-    ></script> -->
-    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <title>Ivy Mboya | Software Engineer</title>
   </head>
   <body>
     <!--Nav Bar
@@ -76,7 +74,7 @@
       <h2>About me</h2>
       <hr />
       <!-- Tab links -->
-      <div class="vertical-tab">
+      <div class="vertical-tab"data-aos="fade-up">
         <div class="tab">
           <button
             class="tablinks"
@@ -151,8 +149,8 @@
       -->
 
     <section class="featured-projects" id="porfolio-section">
-      <div class="featured-projects-title"><h2>Featured Projects</h2></div>
-      <div class="featured-project-image">
+      <div class="featured-projects-title" data-aos="fade-up" data-aos-duration="500"><h2>Featured Projects</h2></div>
+      <div class="featured-project-image" data-aos="fade-right">
         <div class="about-project">
           <h3>Cat Image Generator</h3>
           <p>
@@ -193,7 +191,7 @@
           </ul>
         </div>
       </div>
-      <div class="featured-project-image-2" >
+      <div class="featured-project-image-2" data-aos="fade-left" >
         <div class="about-project">
           <h3>Esovis Virtual Reality</h3>
           <p>
@@ -234,7 +232,7 @@
           </ul>
         </div>
       </div>
-      <div class="featured-project-image-3">
+      <div class="featured-project-image-3" data-aos="fade-right">
         <div class="about-project">
           <h3>Vanilla JS Todo App</h3>
           <p>
@@ -299,8 +297,8 @@
       Thank You Section
     -->
     <section class="thank-you">
-      <div class="thank-you-header"><h2>Thank you!</h2></div>
-      <div class="pleasant"><h5>Have a pleasant day :)</h5></div>
+      <div class="thank-you-header" data-aos="fade-up"><h2>Thank you!</h2></div>
+      <div class="pleasant" data-aos="fade-right" data-aos-offset="200"><h5>Have a pleasant day :)</h5></div>
     </section>
 
     <!--Footer
@@ -316,18 +314,33 @@
           <a href="https://www.linkedin.com/in/ivy-mboya-077b57177/" target = "_blank"><li>LinkedIn</li></a>
         </ul>
       </div>
+      <button id="scrollTop">Scroll To Top</button>
     </section>
-    <!-- 
+    <!--
+      browser compatibility automated testing??
+      learn about the meta tag and all it's values
+      Accesibility
     Creating my logo png -Need feedback from Ian by next week Thursday with logo mockups
     Proper positioning of my created cool ass logo png
     Adding SEO to my head links for more traffic
-    Adding animate on scroll to my elements using js
     Working on the contact form to actually get data- Formsubmit.co
     loading spinner
     fixed vertical bar thingy
-    browser compatibility
+    Buy a domain
+    Get hosting
+    Deploy
    -->
-
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000,offset: 300});
+    </script>
+    <script>
+     gsap.from(".nav-list",{duration:1,opacity:0, x:-100, stagger: 0.6})
+     gsap.from(".hero-lg-intro",{duration:1, opacity:0,x:50,delay:1})
+     gsap.from(".hero-intro",{duration:1, opacity:0,x:50,delay:1})
+     gsap.from(".hero-text",{duration:1, opacity:0,y:50,delay:1})
+     gsap.from(".hero-btn",{duration:1, opacity:0,y:50,delay:1})
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -26,3 +26,13 @@ function openTab(evt, aboutMe) {
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
+
+
+
+  //Scroll to top
+
+  const scrollToTopBtn = document.getElementById('scrollTop');
+  const rootElement = document.documentElement;
+  scrollToTopBtn.addEventListener('click',()=>{
+    rootElement.scrollTo({top:0 , behavior:"smooth"});
+  });
