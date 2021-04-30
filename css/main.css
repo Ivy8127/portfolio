@@ -134,11 +134,15 @@ button.hamburger {
   display: none;
 }
 
-.tab {
+.about-me .vertical-tab {
+  width: 100%;
+}
+
+.about-me .vertical-tab .tab {
   overflow: hidden;
 }
 
-.tab button {
+.about-me .vertical-tab .tab button {
   outline: none;
   border: none;
   width: 50px;
@@ -152,11 +156,12 @@ button.hamburger {
   transition: 0.2s;
 }
 
-.tab button.active {
+.about-me .vertical-tab .tab button.active {
   border-bottom: 1px solid #fb2335;
 }
 
-.tabcontent {
+.about-me .vertical-tab .tabcontent {
+  width: 90%;
   color: #fbf7ef;
   font-family: "Poppins", san-serif;
   padding: 10px;
@@ -166,27 +171,27 @@ button.hamburger {
           animation: fadeEffect 1s;
 }
 
-.tabcontent p {
+.about-me .vertical-tab .tabcontent p {
   font-size: 0.9rem;
   line-height: 25px;
 }
 
-.tabcontent h3 {
+.about-me .vertical-tab .tabcontent h3 {
   padding-bottom: 20px;
 }
 
-.tabcontent .box {
-  width: 150px;
-  height: 160px;
+.about-me .vertical-tab .tabcontent .box {
+  width: 130px;
+  height: 130px;
   border: 1.5px solid #fb2335;
   margin-top: 50px;
   margin-left: 30px;
 }
 
-.tabcontent img {
-  margin-left: 20px;
+.about-me .vertical-tab .tabcontent img {
+  margin-left: 15px;
   width: 100%;
-  height: 160px;
+  height: 140px;
   position: relative;
   top: -20px;
   left: -8px;
@@ -222,19 +227,19 @@ button.hamburger {
     width: 6px;
     height: 6px;
   }
-  .tab button {
+  .about-me .vertical-tab .tab button {
     width: 60px;
     font-size: 1rem;
   }
-  .tabcontent {
-    width: 400px;
+  .about-me .vertical-tab .tabcontent {
+    width: 80%;
   }
-  .tabcontent .box {
-    width: 180px;
-    height: 170px;
+  .about-me .vertical-tab .tabcontent .box {
+    width: 150px;
+    height: 140px;
   }
-  .tabcontent img {
-    height: 170px;
+  .about-me .vertical-tab .tabcontent img {
+    height: 150px;
   }
 }
 
@@ -247,29 +252,29 @@ button.hamburger {
     width: 7px;
     height: 7px;
   }
-  .tab button {
+  .about-me .vertical-tab .tab button {
     width: 70px;
     font-size: 1.2rem;
   }
-  .tabcontent {
-    width: 600px;
+  .about-me .vertical-tab .tabcontent {
+    width: 70%;
   }
-  .tabcontent p {
+  .about-me .vertical-tab .tabcontent p {
     font-size: 1.1rem;
     line-height: 30px;
   }
-  .tabcontent h3 {
+  .about-me .vertical-tab .tabcontent h3 {
     font-size: 1.5rem;
     padding-top: 20px;
   }
-  .tabcontent .box {
-    width: 250px;
-    height: 250px;
+  .about-me .vertical-tab .tabcontent .box {
+    width: 180px;
+    height: 160px;
     margin-top: 70px;
     margin-left: 70px;
   }
-  .tabcontent img {
-    height: 250px;
+  .about-me .vertical-tab .tabcontent img {
+    height: 170px;
   }
 }
 
@@ -297,7 +302,7 @@ button.hamburger {
     background-color: #fbf7ef;
     display: block;
   }
-  .vertical-tab {
+  .about-me .vertical-tab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,14 +313,14 @@ button.hamburger {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .tab {
+  .about-me .vertical-tab .tab {
     width: 30%;
     position: relative;
     bottom: 100px;
     border-right: 0.3px solid #fbf7ef;
     margin-right: 20px;
   }
-  .tab button {
+  .about-me .vertical-tab .tab button {
     display: block;
     width: 20%;
     position: relative;
@@ -324,28 +329,39 @@ button.hamburger {
     padding: 15px;
     margin-bottom: 10px;
   }
-  .tab button.active {
+  .about-me .vertical-tab .tab button.active {
     border-left: 1px solid #fb2335;
     border-bottom: none;
   }
-  .tabcontent {
-    width: 600px;
-    height: 600px;
+  .about-me .vertical-tab .tabcontent {
+    width: 60%;
     position: relative;
-    top: 54px;
-  }
-  .tabcontent h3 {
-    padding-top: 20px;
+    top: 22px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .tabcontent .box {
-    left: -80%;
-    top: -28%;
+  .about-me .vertical-tab .tab {
     position: relative;
-    width: 190px;
+    top: 50%;
+  }
+  .about-me .vertical-tab .tabcontent {
+    width: 45%;
+    position: relative;
+    top: 8px;
+    margin-left: 15px;
+  }
+  .about-me .vertical-tab .tabcontent .box {
+    left: -92%;
+    top: -240px;
+    position: relative;
+    width: 200px;
+    height: 200px;
     margin: 0;
+  }
+  .about-me .vertical-tab .tabcontent img {
+    height: 210px;
+    margin-left: 18px;
   }
 }
 
@@ -358,62 +374,70 @@ button.hamburger {
     width: 15px;
     height: 15px;
   }
-  .tab {
-    top: -50px;
+  .about-me .vertical-tab .tab {
+    top: -126px;
   }
-  .tab button {
+  .about-me .vertical-tab .tab button {
     width: 150px;
     font-size: 1.9rem;
   }
-  .tabcontent {
-    width: 700px;
-    padding-left: 30px;
+  .about-me .vertical-tab .tabcontent {
+    width: 50%;
+    margin-left: 30px;
+    position: relative;
+    top: -2px;
   }
-  .tabcontent h3 {
+  .about-me .vertical-tab .tabcontent h3 {
     font-size: 2rem;
     padding-top: 40px;
   }
-  .tabcontent p {
+  .about-me .vertical-tab .tabcontent p {
     font-size: 1.4rem;
     line-height: 35px;
   }
-  .tabcontent .box {
+  .about-me .vertical-tab .tabcontent .box {
     left: -560px;
-    top: -230px;
+    top: -310px;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 230px;
   }
-  .tabcontent img {
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .tabcontent .box {
-    left: -680px;
+  .about-me .vertical-tab .tabcontent img {
+    height: 240px;
   }
 }
 
-@media screen and (min-width: 1840px) {
-  .tabcontent .box {
-    left: -700px;
+/*   
+@media screen and (min-width:1600px){
+  .tabcontent{
+    .box{
+      left: -680px;
+    }
   }
 }
-
-@media screen and (min-width: 1920px) {
-  .tabcontent .box {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: -800px;
-  }
-  .tabcontent img {
-    height: 300px;
+@media screen and (min-width:1840px){
+  .tabcontent{
+    .box{
+      left: -700px;
+    }
   }
 }
-
+@media screen and (min-width:1920px){
+  .tabcontent{
+    .box{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      left: -800px;
+    }
+    img{
+      height: 300px;
+    }
+  }
+  
+}
+ */
 .featured-projects {
   width: 100%;
   height: auto;
