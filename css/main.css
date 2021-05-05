@@ -62,7 +62,8 @@ button.hamburger {
   .nav-list {
     position: fixed;
     background-color: #fbf7ef;
-    height: 100vh;
+    min-height: 90vh;
+    z-index: 1000;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,6 +187,11 @@ button.hamburger {
   border: 1.5px solid #fb2335;
   margin-top: 50px;
   margin-left: 30px;
+}
+
+.about-me .vertical-tab .tabcontent .box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .about-me .vertical-tab .tabcontent img {
@@ -1136,7 +1142,6 @@ media queries for large screens afterwards
  */
 .container {
   width: 100%;
-  min-height: 80vh;
   background-color: #FBF7EF;
   padding: 30px;
   font-family: "Poppins", san-serif;

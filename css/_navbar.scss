@@ -48,7 +48,8 @@ button.hamburger {
   .nav-list {
     position: fixed;
     background-color: $floral-white;
-    height: 100vh;
+    min-height: 90vh;
+    z-index: 1000;
     width: 100%;
     flex-direction: column;
     top: 0;

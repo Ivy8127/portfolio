@@ -18,28 +18,22 @@
   <body>
     <!--Nav Bar
        Section-->
-
-    <nav>
-      <!--let's make a logo-->
-
-      <h1 class="logo"><a href="#">Ivy</a></h1>
-
-      <ul class="nav-list">
-        <li><a href="#About-section">About</a></li>
-        <li><a href="#porfolio-section">Portfolio</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-      <button class="hamburger hamburger--slider" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </nav>
- <!--    <div class="email">
-      <a href="">mboyaivy@gmail.com</a>
-      <div class="line"><hr></div>
-    </div> -->
-
+       <nav>
+        <!--let's make a logo-->
+  
+        <h1 class="logo"><a href="#">Ivy</a></h1>
+  
+        <ul class="nav-list">
+          <li><a href="#About-section">About</a></li>
+          <li><a href="#porfolio-section">Portfolio</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        <button class="hamburger hamburger--slider" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
     <!--Hero 
       section-->
 
@@ -325,15 +319,14 @@
       <button id="scrollTop">Scroll To Top</button>
     </section>
     <!--
-      browser compatibility automated testing??
+      edge --about me pic position issue
       learn about the meta tag and all it's values
       Accesibility
     Creating my logo png -Need feedback from Ian by next week Thursday with logo mockups
     Proper positioning of my created cool ass logo png
     Adding SEO to my head links for more traffic
     Working on the contact form to actually get data- Formsubmit.co
-    loading spinner
-    fixed vertical bar thingy
+    preloader
     Buy a domain
     Get hosting
     Deploy
@@ -348,6 +341,14 @@
      gsap.from(".hero-intro",{duration:1, opacity:0,x:50,delay:1})
      gsap.from(".hero-text",{duration:1, opacity:0,y:50,delay:1})
      gsap.from(".hero-btn",{duration:1, opacity:0,y:50,delay:1})
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('nav li a').on('click', function(){
+        $('.hamburger').trigger('click');
+      });
+      })
     </script>
     <script src="app.js"></script>
   </body>
