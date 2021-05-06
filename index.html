@@ -36,7 +36,7 @@
       </nav>
     <!--Hero 
       section-->
-
+<!-- 
     <section class="container">
       <div class="hero-content">
       <div class="hero-intro">
@@ -59,16 +59,20 @@
       </div>
       
     </div>
-    </section>
+    </section> -->
 
     <!--About me 
       section-->
 
     <section class="about-me" id="About-section">
-      <h2>About me</h2>
-      <hr />
+      <div class="about-content" >
+      <div class="about-hr">
+        <h2  data-aos="fade-right">About me</h2>
+      <hr  data-aos="fade-left"/>
+      </div>
+      
       <!-- Tab links -->
-      <div class="vertical-tab" data-aos="fade-up">
+      <div class="flex-tab" data-aos="fade-up">
         <div class="tab">
           <button
             class="tablinks"
@@ -87,6 +91,7 @@
         </div>
 
         <!-- Tab content -->
+        <div class="full-tab">
         <div id="About" class="tabcontent">
           <h3>Creative Developer</h3>
           <p>
@@ -97,9 +102,6 @@
             tinkering with HTML and styling buttons brought me here -
             and I've never looked back since!
           </p>
-          <div class="box">
-            <img src="/images/IMG_20200610_143924.jpg" alt="" />
-          </div>
         </div>
 
         <div id="Job" class="tabcontent">
@@ -111,45 +113,42 @@
             I also dabble in data-driven data science web applications and visualization projects.
             I love to work on impactful projects and deliver high quality products.
           </p>
-          <div class="box">
-            <img src="/images/IMG_20200610_143924.jpg" alt="" />
-          </div>
         </div>
 
         <div id="Skill" class="tabcontent">
           <h3>Intermediate - but deadly!</h3>
           <p>
-            I am proficient in JavaScript/CSS/HTML, Sass,ES6 Syntax,Database design & using DBMS(MySql,Postgresql,MongoDB),
-            Python & its diverse frameworks(Django & Flask), Php-Laravel,CI/CD pipeline, accessibility, 
-            UI high-fidelity wireframing & Prototyping(Figma)
+            I am proficient in JavaScript/CSS/HTML, Sass ,ES6 Syntax , Database design & using DBMS(MySql ,Postgresql ,MongoDB),
+            Python & its diverse frameworks(Django & Flask), Php-Laravel , CI/CD pipeline, accessibility, UI high-fidelity wireframing & Prototyping(Figma)
             and writing clean and tested code. I like to learn alot from others and get better at my craft each day. 
             
           </p>
-          <div class="box">
-            <img src="/images/IMG_20200610_143924.jpg" alt="" />
-          </div>
         </div>
         <div id="Bonus" class="tabcontent">
           <h3>Bonus Time!</h3>
           <p>
             In my spare time, I like to relax to beauty and make-up Youtube videos,
-            widly insane stories about space and anime -yes I'm a total One Piece fan girl ! .
+            wildly insane stories about space and anime -yes I'm a total One Piece fan girl ! .
             I love spending time with my family and going out for brunch with friends.
             I can sing really well, I would plug my Youtube channel here but I'm way too shy :).
             I'm a huge cat lover -I totally want to pet
             one now! 😹 and yeah that's a little side of me that you now know.
-          </p>
-          <div class="box">
+          </p> 
+        </div>
+      </div>
+        <div class="image-profile">
+         <div class="box">
             <img src="/images/IMG_20200610_143924.jpg" alt="" />
           </div>
         </div>
+      </div>
       </div>
     </section>
 
     <!--
         Featured Projects Section
       -->
-
+<!-- 
     <section class="featured-projects" id="porfolio-section">
       <div class="featured-projects-title"data-aos="fade-up" data-aos-duration="500" ><h2>Featured Projects</h2></div>
       <div class="featured-project-image" data-aos="fade-right">
@@ -275,7 +274,7 @@
       <div class="more-projects">
         <a href="https://github.com/Ivy8127?tab=repositories" target="_blank" class="more-projects">More Github Projects </a>
       </div>
-    </section>
+    </section> -->
 
     <!--Contact me form section-->
     <section class="contact-me" id="contact-section">
@@ -319,6 +318,7 @@
       <button id="scrollTop">Scroll To Top</button>
     </section>
     <!--
+      redo the featured projects section with css grid bc it's causing that horizontal scroll
       edge --about me pic position issue
       learn about the meta tag and all it's values
       Accesibility

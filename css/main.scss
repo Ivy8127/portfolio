@@ -30,32 +30,6 @@ li{
 a{
     text-decoration: none;
 }
-/* .email{
-  font-family: $font-family;
-  a{
-    position: fixed;
-    top: 59%;
-    left: 84.5%;
-    transform: rotate(90deg);
-    color: $grey;
-    font-size: 14px;
-    transition: all .2s ease-out;
-    &:hover{
-      color: $red;
-    }
-  }
-  .line{
-    hr{
-    width: 101px;
-    position: fixed;
-    top: 90%;
-    left: 88%;
-    height: 1px;
-    transform: translate(-88%,-90%);
-    transform: rotate(90deg);
-    }
-  }
-} */
 /* 
 We start creating for mobile then add
 media queries for large screens afterwards

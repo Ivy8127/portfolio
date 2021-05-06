@@ -111,18 +111,29 @@ button.hamburger {
 
 .about-me {
   background-color: #000000;
-  width: 100%;
-  padding: 20px;
-}
-
-.about-me h2 {
-  color: #fbf7ef;
+  color: white;
   font-family: "Poppins", san-serif;
-  font-size: 1.5rem;
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
 }
 
-.about-me h2::after {
+.about-me .about-content {
+  width: 95%;
+  margin: 0px auto 14%;
+}
+
+.about-me .about-content .about-hr hr {
+  border: none;
+  background-color: #fbf7ef;
+  height: 1px;
+}
+
+.about-me .about-content .about-hr h2 {
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+}
+
+.about-me .about-content .about-hr h2::after {
   content: "";
   background-color: #fb2335;
   width: 5px;
@@ -131,75 +142,76 @@ button.hamburger {
   border-radius: 50%;
 }
 
-.about-me hr {
-  display: none;
-}
-
-.about-me .vertical-tab {
-  width: 100%;
-}
-
-.about-me .vertical-tab .tab {
+.about-me .about-content .tab {
   overflow: hidden;
+  padding: 8px 0px;
 }
 
-.about-me .vertical-tab .tab button {
+.about-me .about-content .tab button {
   outline: none;
   border: none;
-  width: 50px;
+  margin-right: 5px;
+  width: 45px;
+  padding-bottom: 4px;
   color: #fbf7ef;
   background-color: #000000;
   font-family: "Poppins", san-serif;
-  margin-left: 5px;
-  padding: 5px 5px 2px;
+  text-align: center;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.about-me .vertical-tab .tab button.active {
+.about-me .about-content .tab button.active {
   border-bottom: 1px solid #fb2335;
 }
 
-.about-me .vertical-tab .tabcontent {
-  width: 90%;
-  color: #fbf7ef;
-  font-family: "Poppins", san-serif;
-  padding: 10px;
-  margin-bottom: 30px;
+.about-me .about-content .tabcontent {
   display: none;
   -webkit-animation: fadeEffect 1s;
           animation: fadeEffect 1s;
 }
 
-.about-me .vertical-tab .tabcontent p {
-  font-size: 0.9rem;
-  line-height: 25px;
+.about-me .about-content .tabcontent p {
+  font-size: 0.8rem;
+  line-height: 20px;
+  padding-bottom: 24px;
 }
 
-.about-me .vertical-tab .tabcontent h3 {
-  padding-bottom: 20px;
+.about-me .about-content .tabcontent h3 {
+  padding-bottom: 8px;
 }
 
-.about-me .vertical-tab .tabcontent .box {
+.about-me .about-content .image-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 150px;
+}
+
+.about-me .about-content .image-profile .box {
+  border: 1.5px solid #fb2335;
   width: 130px;
   height: 130px;
-  border: 1.5px solid #fb2335;
-  margin-top: 50px;
-  margin-left: 30px;
 }
 
-.about-me .vertical-tab .tabcontent .box:hover {
+.about-me .about-content .image-profile:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.about-me .vertical-tab .tabcontent img {
+.about-me .about-content img {
   margin-left: 15px;
   width: 100%;
-  height: 140px;
+  height: 130px;
   position: relative;
-  top: -20px;
+  top: -10px;
   left: -8px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -223,227 +235,206 @@ button.hamburger {
   }
 }
 
-/*   Media queries for larger screens  */
 @media screen and (min-width: 576px) {
-  .about-me h2 {
+  .about-me .about-content .about-hr h2 {
     font-size: 1.8rem;
+    padding-bottom: 6px;
   }
-  .about-me h2::after {
+  .about-me .about-content .about-hr h2::after {
     content: "";
     width: 6px;
     height: 6px;
   }
-  .about-me .vertical-tab .tab button {
+  .about-me .about-content .tab {
+    padding: 15px 0px;
+  }
+  .about-me .about-content .tab button {
     width: 60px;
     font-size: 1rem;
+    margin-right: 10px;
   }
-  .about-me .vertical-tab .tabcontent {
-    width: 80%;
-  }
-  .about-me .vertical-tab .tabcontent .box {
+  .about-me .about-content .image-profile .box {
     width: 150px;
     height: 140px;
   }
-  .about-me .vertical-tab .tabcontent img {
-    height: 150px;
+  .about-me .about-content .image-profile img {
+    height: 140px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-me h2 {
+  .about-me .about-content .about-hr h2 {
     font-size: 2.1rem;
   }
-  .about-me h2::after {
+  .about-me .about-content .about-hr h2::after {
     content: "";
     width: 7px;
     height: 7px;
   }
-  .about-me .vertical-tab .tab button {
+  .about-me .about-content .tab button {
     width: 70px;
     font-size: 1.2rem;
   }
-  .about-me .vertical-tab .tabcontent {
-    width: 70%;
+  .about-me .about-content .tabcontent {
+    width: 90%;
   }
-  .about-me .vertical-tab .tabcontent p {
-    font-size: 1.1rem;
-    line-height: 30px;
+  .about-me .about-content .tabcontent p {
+    line-height: 28px;
+    font-size: 1rem;
   }
-  .about-me .vertical-tab .tabcontent h3 {
+  .about-me .about-content .tabcontent h3 {
     font-size: 1.5rem;
     padding-top: 20px;
   }
-  .about-me .vertical-tab .tabcontent .box {
+  .about-me .about-content .image-profile .box {
     width: 180px;
     height: 160px;
-    margin-top: 70px;
-    margin-left: 70px;
   }
-  .about-me .vertical-tab .tabcontent img {
-    height: 170px;
+  .about-me .about-content .image-profile img {
+    height: 160px;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .about-me {
-    padding: 30px;
+@media screen and (min-width: 992px) {
+  .about-me .about-content .about-hr {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.6fr .7fr;
+        grid-template-columns: 0.6fr .7fr;
   }
-  .about-me h2 {
-    font-size: 3rem;
-    margin-left: 40px;
-    padding: 10px 10px 0px;
+  .about-me .about-content .about-hr hr {
+    margin-top: 6%;
   }
-  .about-me::after {
+  .about-me .about-content .about-hr h2 {
+    font-size: 2.5rem;
+  }
+  .about-me .about-content .about-hr h2::after {
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
   }
-  .about-me hr {
-    position: relative;
-    width: 45%;
-    left: 41%;
-    top: -28px;
-    height: 1px;
-    border: none;
-    background-color: #fbf7ef;
-    display: block;
+  .about-me .about-content .flex-tab {
+    padding: 40px 0px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .5fr .5fr 2fr;
+        grid-template-columns: .5fr .5fr 2fr;
+    grid-gap: 40px;
   }
-  .about-me .vertical-tab {
+  .about-me .about-content .flex-tab .tab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .about-me .vertical-tab .tab {
-    width: 30%;
-    position: relative;
-    bottom: 100px;
-    border-right: 0.3px solid #fbf7ef;
-    margin-right: 20px;
-  }
-  .about-me .vertical-tab .tab button {
-    display: block;
-    width: 20%;
-    position: relative;
-    left: 50%;
-    text-align: left;
+  .about-me .about-content .flex-tab .tab button {
     padding: 15px;
-    margin-bottom: 10px;
+    width: 100px;
+    margin-right: 0;
   }
-  .about-me .vertical-tab .tab button.active {
+  .about-me .about-content .flex-tab .tab button.active {
     border-left: 1px solid #fb2335;
     border-bottom: none;
   }
-  .about-me .vertical-tab .tabcontent {
-    width: 60%;
-    position: relative;
-    top: 22px;
+  .about-me .about-content .flex-tab .image-profile {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about-me .about-content .flex-tab .image-profile .box {
+    margin-top: 28px;
+    width: 200px;
+    height: 200px;
+  }
+  .about-me .about-content .flex-tab .image-profile img {
+    height: 200px;
+  }
+  .about-me .about-content .flex-tab .full-tab {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding-top: 6px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-me .vertical-tab .tab {
-    position: relative;
-    top: 50%;
+  .about-me .about-content .about-hr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr .68fr;
+        grid-template-columns: 0.5fr .68fr;
   }
-  .about-me .vertical-tab .tabcontent {
-    width: 45%;
-    position: relative;
-    top: 8px;
-    margin-left: 15px;
-  }
-  .about-me .vertical-tab .tabcontent .box {
-    left: -92%;
-    top: -240px;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0;
-  }
-  .about-me .vertical-tab .tabcontent img {
-    height: 210px;
-    margin-left: 18px;
+  .about-me .about-content .about-hr hr {
+    height: .2px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .about-me h2 {
+  .about-me .about-content .about-hr h2 {
     font-size: 3.3rem;
   }
-  .about-me h2::after {
+  .about-me .about-content .about-hr::after {
     content: "";
     width: 15px;
     height: 15px;
   }
-  .about-me .vertical-tab .tab {
-    top: -126px;
-  }
-  .about-me .vertical-tab .tab button {
+  .about-me .about-content .tab button {
     width: 150px;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
-  .about-me .vertical-tab .tabcontent {
-    width: 50%;
-    margin-left: 30px;
-    position: relative;
-    top: -2px;
-  }
-  .about-me .vertical-tab .tabcontent h3 {
+  .about-me .about-content .flex-tab .tabcontent h3 {
     font-size: 2rem;
-    padding-top: 40px;
   }
-  .about-me .vertical-tab .tabcontent p {
+  .about-me .about-content .flex-tab .tabcontent p {
     font-size: 1.4rem;
-    line-height: 35px;
+    line-height: 33px;
   }
-  .about-me .vertical-tab .tabcontent .box {
-    left: -560px;
-    top: -310px;
-    position: relative;
+  .about-me .about-content .flex-tab .image-profile .box {
     width: 220px;
     height: 230px;
   }
-  .about-me .vertical-tab .tabcontent img {
-    height: 240px;
+  .about-me .about-content .flex-tab .image-profile img {
+    height: 230px;
   }
 }
 
-/*   
-@media screen and (min-width:1600px){
-  .tabcontent{
-    .box{
-      left: -680px;
-    }
+@media screen and (min-width: 1600px) {
+  .about-me .about-content .about-hr {
+    -ms-grid-columns: 0.5fr .72fr;
+        grid-template-columns: 0.5fr .72fr;
   }
 }
-@media screen and (min-width:1840px){
-  .tabcontent{
-    .box{
-      left: -700px;
-    }
+
+@media screen and (min-width: 1920px) {
+  .about-me .about-content .about-hr {
+    -ms-grid-columns: 0.5fr .74fr;
+        grid-template-columns: 0.5fr .74fr;
+  }
+  .about-me .about-content .flex-tab .image-profile .box {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me .about-content .flex-tab .image-profile img {
+    height: 300px;
   }
 }
-@media screen and (min-width:1920px){
-  .tabcontent{
-    .box{
-      position: relative;
-      width: 300px;
-      height: 300px;
-      position: relative;
-      left: -800px;
-    }
-    img{
-      height: 300px;
-    }
-  }
-  
-}
- */
+
 .featured-projects {
   width: 100%;
   height: auto;
@@ -1108,32 +1099,6 @@ a {
   text-decoration: none;
 }
 
-/* .email{
-  font-family: $font-family;
-  a{
-    position: fixed;
-    top: 59%;
-    left: 84.5%;
-    transform: rotate(90deg);
-    color: $grey;
-    font-size: 14px;
-    transition: all .2s ease-out;
-    &:hover{
-      color: $red;
-    }
-  }
-  .line{
-    hr{
-    width: 101px;
-    position: fixed;
-    top: 90%;
-    left: 88%;
-    height: 1px;
-    transform: translate(-88%,-90%);
-    transform: rotate(90deg);
-    }
-  }
-} */
 /* 
 We start creating for mobile then add
 media queries for large screens afterwards

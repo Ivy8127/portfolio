@@ -4,330 +4,324 @@ $grey: #b3aa94;
 $black: #000000;
 $font-family: "Poppins", san-serif;
 
-.about-me {
+
+.about-me{
   background-color: $black;
+  color: white;
+  font-family: $font-family;
   width: 100%;
-  padding: 20px;
-  //add a height to me
-  h2 {
-    color: $floral-white;
-    font-family: $font-family;
-    font-size: 1.5rem;
-    padding: 10px;
-    &::after {
-      content: "";
-      background-color: $red;
-      width: 5px;
-      height: 5px;
-      display: inline-block;
-      border-radius: 50%;
-    }
-  }
-  hr{
-    display: none;
-  }
-  .vertical-tab{
-    width: 100%;
-  .tab {
-    overflow: hidden;
-  }
-  .tab button {
-    outline: none;
-    border: none;
-    width: 50px;
-    color: $floral-white;
-    background-color: $black;
-    font-family: $font-family;
-    margin-left: 5px;
-    padding: 5px 5px 2px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  .tab button.active {
-    border-bottom: 1px solid $red;
-  }
-  .tabcontent {
-    width: 90%;
-    color: $floral-white;
-    font-family: $font-family;
-    padding: 10px;
-    margin-bottom: 30px;
-    display: none;
-    animation: fadeEffect 1s;
-    p {
-      font-size: 0.9rem;
-      line-height: 25px;
-    }
-    h3 {
-      padding-bottom: 20px;
-    }
-    .box {
-      width: 130px;
-      height: 130px;
-      border: 1.5px solid $red;
-      margin-top: 50px;
-      margin-left: 30px;
-      &:hover{
-        transform: scale(1.05)
+  padding: 30px;
+  .about-content{
+    width: 95%;
+    margin: 0px auto 14%;
+    .about-hr {
+      hr{
+        border:none;
+        background-color: $floral-white;
+        height: 1px;
+      }
+      h2{
+      font-size: 1.5rem;
+      padding-bottom: 3px;
+      &::after {
+        content: "";
+        background-color: $red;
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        border-radius: 50%;
+      }
       }
     }
+
+    .tab {
+      overflow: hidden;
+      padding: 8px 0px;
+      button {
+        outline: none;
+        border: none;
+        margin-right: 5px;
+        width: 45px;
+        padding-bottom: 4px;
+        color: $floral-white;
+        background-color: $black;
+        font-family: $font-family;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+
+    .tab button.active {
+      border-bottom: 1px solid $red;
+    }
+    .tabcontent{
+      display: none;
+      animation: fadeEffect 1s;
+      p {
+        font-size: 0.8rem;
+        line-height: 20px;
+        padding-bottom: 24px;
+      }
+      h3 {
+        padding-bottom: 8px;
+      }
+
+    }
+    .image-profile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+    .box{
+      border: 1.5px solid $red;
+      width: 130px;
+      height: 130px;
+    }
+    &:hover{
+      transform: scale(1.05)
+    }
+  }
     img {
       margin-left: 15px;
       width: 100%;
-      height: 140px;
+      height: 130px;
       position: relative;
-      top: -20px;
+      top: -10px;
       left: -8px;
       object-fit: cover;
     }
   }
+  
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
   }
-  @keyframes fadeEffect {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-
-
-/*   Media queries for larger screens  */
-
+}
 @media screen and (min-width: 576px) {
-  .about-me {
-    h2{
-    font-size: 1.8rem;
-    &::after {
-      content: "";
-      width: 6px;
-      height: 6px;
+ .about-me{
+  .about-content{
+    .about-hr{
+      h2{
+        font-size: 1.8rem;
+        padding-bottom: 6px;
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+        }
+      }
     }
-  }
-  .vertical-tab{
-    .tab button {
-      width: 60px;
-      font-size: 1rem;
+    .tab{
+      padding:15px 0px;
+      button{
+       width: 60px;
+       font-size: 1rem;
+       margin-right: 10px;
+      }
     }
-  .tabcontent {
-   width: 80%;
-    .box {
-      width: 150px;
-      height: 140px;
+    .image-profile{
+      .box {
+        width: 150px;
+        height: 140px;
+      }
+      img {
+        height: 140px;
+      }
     }
-    img {
-      height: 150px;
-    }
-  }
-}
-}
+   }
+ }
 
-  }
-    
-
+}
 @media screen and (min-width: 768px) {
-  .about-me {
-    h2{
-    font-size: 2.1rem;
-    &::after {
-      content: "";
-      width: 7px;
-      height: 7px;
+  .about-me{
+    .about-content{
+      .about-hr{
+        h2{
+        font-size: 2.1rem;
+        &::after {
+          content: "";
+          width: 7px;
+          height: 7px;
+        }
+        }
+      }
+      .tab {
+        button {
+        width: 70px;
+        font-size: 1.2rem;
+        }
+      }
+      .tabcontent {
+        width: 90%;
+        p {
+         line-height: 28px;
+          font-size: 1rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+          padding-top: 20px;
+        }
+      }
+      .image-profile{
+        .box {
+          width: 180px;
+          height: 160px; 
+        }
+        img {
+          height: 160px;
+        }
+      }
     }
-  }
- 
-  .vertical-tab{
-    .tab button {
-      width: 70px;
-      font-size: 1.2rem;
-    }
-  .tabcontent {
-    width: 70%;
-    p {
-      font-size: 1.1rem;
-      line-height: 30px;
-    }
-    h3 {
-      font-size: 1.5rem;
-      padding-top: 20px;
-    }
-    .box {
-      width: 180px;
-      height: 160px;
-      margin-top: 70px;
-      margin-left: 70px;
-    }
-    img {
-      height: 170px;
-    }
-  }
   }
 }
-}
-  
-@media screen and (min-width: 1000px) {
-  .about-me {
-    padding: 30px;
-    h2 {
-      font-size: 3rem;
-      margin-left: 40px;
-      padding: 10px 10px 0px;
+@media screen and (min-width: 992px) {
+  .about-me{
+    .about-content{
+      .about-hr{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 0.6fr .7fr;
+       hr{
+      margin-top: 6%;
+       }
+       h2{
+         font-size: 2.5rem;
+         &::after {
+          content: "";
+          width: 9px;
+          height: 9px;
+        }   
+       }
+      }
+      .flex-tab{
+        padding: 40px 0px 0px;
+        display: grid;
+        grid-template-columns: .5fr .5fr 2fr;
+        grid-gap: 40px;
+        .tab{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          order: 2;
+          button{
+            padding: 15px;
+            width: 100px;
+            margin-right: 0;
+          }
+        }
+        .tab button.active{
+          border-left: 1px solid $red;
+          border-bottom: none;
+        }
+        .image-profile{
+          align-items: flex-start;
+          order: 1;
+          .box {
+           margin-top: 28px;
+           width: 200px;
+          height: 200px; 
+          }
+          img{
+            height: 200px;
+          }
+        }
+        .full-tab{
+          order: 3;
+          padding-top: 6px;
+        }
+      }
     }
-    &::after {
-      content: "";
-      width: 12px;
-      height: 12px;
-    }
-    hr{
-      position: relative;
-      width: 45%;
-      left: 41%;
-      top: -28px;
-      height: 1px;
-      border:none;
-      background-color: $floral-white;
-      display: block;
-    }
-    .vertical-tab {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    
-    .tab {
-      width: 30%;
-      position: relative;
-      bottom: 100px;
-      border-right: 0.3px solid $floral-white;
-      margin-right: 20px;
-    }
-    .tab button {
-      display: block;
-      width: 20%;
-      position: relative;
-      left: 50%;
-      text-align: left;
-      padding: 15px;
-      margin-bottom: 10px;
-    }
-    .tab button.active {
-      border-left: 1px solid $red;
-      border-bottom: none;
-    }
-    .tabcontent {
-      width: 60%;
-      position: relative;
-      top: 22px;
-    }
-  }
   }
 
-  }
-  
+}
 @media screen and (min-width: 1200px) {
   .about-me{
-    .vertical-tab{
-      .tab{
-        position: relative;
-        top: 50%;
+    .about-content{
+      .about-hr{
+        display: grid;
+        grid-template-columns: 0.5fr .68fr;
+        hr{
+          height: .2px;
+          
+        }
       }
-  .tabcontent{
-    width: 45%;
-    position: relative;
-    top: 8px;
-    margin-left: 15px;
-    .box{
-       left: -92%;
-       top: -240px;
-       position: relative;
-       width: 200px;
-       height: 200px;
-       margin: 0;
-     }
-     img{
-       height: 210px;
-       margin-left: 18px;
-     }
     }
-    }
-  }  
+  } 
 }
 @media screen and (min-width: 1440px) {
-  .about-me {
-    h2{
-    font-size: 3.3rem;
-    &::after {
-      content: "";
-      width: 15px;
-      height: 15px;
-    }
-  }
-  .vertical-tab{
-    .tab{
-      top: -126px;
-    }
-    .tab button {
-      width: 150px;
-      font-size: 1.9rem;
-      
-    }
-    .tabcontent{
-     width: 50%;
-      margin-left: 30px;
-      position: relative;
-      top: -2px;
-      h3{
-        font-size: 2rem;
-        padding-top: 40px;
+  .about-me{
+    .about-content{
+      .about-hr{
+        h2{
+          font-size: 3.3rem;
+        }
+        &::after {
+          content: "";
+          width: 15px;
+          height: 15px;
+        }
       }
-      p{
-        font-size: 1.4rem;
-        line-height: 35px;
+      .tab{
+        button{
+          width: 150px;
+          font-size: 1.6rem;
+        }
       }
-      .box{
-         left: -560px;
-         top: -310px;
-         position: relative;
-         width: 220px;
-         height: 230px;
-       }
-       img{
-         height: 240px;
-       }
-    }   
-  }
-
-  }
-  }
-/*   
-@media screen and (min-width:1600px){
-  .tabcontent{
-    .box{
-      left: -680px;
+      .flex-tab{
+      .tabcontent{
+        h3{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1.4rem;
+          line-height: 33px;
+        }
+      }
+      .image-profile{
+        .box{
+          width: 220px;
+          height: 230px;
+        }
+        img{
+          height: 230px;
+        }
+      }
+      }
     }
   }
 }
-@media screen and (min-width:1840px){
-  .tabcontent{
-    .box{
-      left: -700px;
+@media screen and (min-width: 1600px) {
+  .about-me{
+    .about-content{
+      .about-hr{
+        grid-template-columns: 0.5fr .72fr;
+      }
     }
   }
 }
 @media screen and (min-width:1920px){
-  .tabcontent{
-    .box{
-      position: relative;
-      width: 300px;
-      height: 300px;
-      position: relative;
-      left: -800px;
+  .about-me{
+    .about-content{
+      .about-hr{
+        grid-template-columns: 0.5fr .74fr;
+      }
+      .flex-tab{
+        .image-profile{
+        .box{
+          width: 300px;
+          height: 300px;
+        }
+        img{
+          height: 300px;
+        }
+      }
+        }
+      }
     }
-    img{
-      height: 300px;
-    }
-  }
-  
 }
- */
