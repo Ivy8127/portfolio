@@ -12,6 +12,11 @@ nav {
   height: 10vh;
   width: 100%;
 }
+#logo{
+
+  padding: 20px;
+  margin-top: 20px;
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -35,7 +40,7 @@ nav {
     }
   }
 }
-nav .logo a {
+nav a {
   color: $red;
   font-size: 1.8rem;
   font-family: $font-family;
@@ -80,11 +85,21 @@ button.hamburger {
     cursor: pointer;
     transform: translate(-5%, -50%);
   }
-  nav .logo a {
+   #logo  {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top:30%;
+    left: -5%;
     transform: translate(-5%, -50%);
     font-size: 2rem;
+    img{
+      width: 40px;
+    }
+  }
+}
+@media screen and( min-width:1440px){
+  #logo{
+    img{
+      width: 55px;
+    }
   }
 }

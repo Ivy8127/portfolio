@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Remember to add seo before completing the project-->
+    <meta name="robots" content="index,follow">
+
+    <!-- Open graph data -->
+
+    <meta name="description" content="Ivy Mboya is a software Engineer who specializes in creating and designing beautiful and thoughtful experiences on the web.">
+    <meta property="og:title" content="Ivy Mboya">
+    <meta property="og:description" content="Ivy Mboya is a software Engineer who specializes in creating and designing beautiful and thoughtful experiences on the web.">
+    <meta property="og:url" content="https://www.ivymboya.com">
+    <meta property="og:image" content="/images/IMG_20200610_143924.jpg">
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card data -->
+
+  
     <link rel="stylesheet" href="/css/main.css" />
     <link href="/css/hamburger.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -12,6 +24,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <title>Ivy Mboya | Software Engineer</title>
   </head>
@@ -19,16 +35,13 @@
     <!--Nav Bar
        Section-->
        <nav>
-        <!--let's make a logo-->
-  
-        <h1 class="logo"><a href="#">Ivy</a></h1>
-  
+          <a aria-label="home" id="logo" href="/"><img src="logo.png" alt="brand logo"></a>
         <ul class="nav-list">
           <li><a href="#About-section">About</a></li>
           <li><a href="#porfolio-section">Portfolio</a></li>
           <li><a href="#contact-section">Contact</a></li>
         </ul>
-        <button class="hamburger hamburger--slider" type="button">
+        <button aria-label ="navigation-toggle"class="hamburger hamburger--slider"  type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -138,7 +151,7 @@
       </div>
         <div class="image-profile">
          <div class="box">
-            <img src="/images/IMG_20200610_143924.jpg" alt="" />
+            <img src="/images/IMG_20200610_143924.jpg" alt="Ivy Mboya Headshot" />
           </div>
         </div>
       </div>
@@ -165,8 +178,7 @@
             <li>Cat Web API</li>
           </ul>
           <ul class="links">
-            <a href="https://github.com/Ivy8127/cat-image-generator" target = "_blank"><li>
-              <a href="https://github.com/Ivy8127/cat-image-generator " ><li>
+            <a href="https://github.com/Ivy8127/cat-image-generator" aria-label="Github" target = "_blank"><li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -207,7 +219,7 @@
           </ul>
           <ul class="links">
               
-              <a href="https://github.com/Ivy8127/Esovis-VR" target = "_blank"> <li>
+              <a href="https://github.com/Ivy8127/Esovis-VR" aria-label="Github" target = "_blank"><li>
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -247,7 +259,7 @@
             <li>JavaScript</li>
           </ul>
           <ul class="links">
-            <a href="https://github.com/Ivy8127/Todo-App" target = "_blank"><li> <svg
+            <a href="https://github.com/Ivy8127/Todo-App" aria-label="Github" target = "_blank"><li> <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -282,6 +294,7 @@
       <form action="https://formsubmit.co/mboyaivy@gmail.com" method="POST">
         <input type="text" name="Name" placeholder="Name" required />
         <input type="email" name="Email" placeholder="Email" required />
+        <input type="hidden" name="_subject" value="Possible Client Submission">
         <label for="Message">Message</label>
         <textarea
           name="Message"
@@ -318,15 +331,11 @@
       <button id="scrollTop">Scroll To Top</button>
     </section>
     <!--
-      learn about the meta tag and all it's values
-      Accesibility
-    Creating my logo png
-    Proper positioning of my created cool ass logo png
-    Adding SEO to my head links for more traffic
-    Working on the contact form to actually get data- Formsubmit.co
+    twitter cards /fb opengraph debugging
     preloader
+    ssl cert from netlify
     Buy a domain
-    Get hosting
+    Get hosting --netlify
     Deploy
    -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

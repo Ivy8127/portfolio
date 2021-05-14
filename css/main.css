@@ -14,6 +14,11 @@ nav {
   width: 100%;
 }
 
+#logo {
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +52,7 @@ nav {
   color: #000c14;
 }
 
-nav .logo a {
+nav a {
   color: #fb2335;
   font-size: 1.8rem;
   font-family: "Poppins", san-serif;
@@ -99,13 +104,22 @@ button.hamburger {
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
   }
-  nav .logo a {
+  #logo {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 30%;
+    left: -5%;
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
     font-size: 2rem;
+  }
+  #logo img {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #logo img {
+    width: 55px;
   }
 }
 
